@@ -202,6 +202,38 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
 @media(max-width:980px){.hero-inner{grid-template-columns:1fr;padding-top:7rem}.hero-right{display:none}.part-wrap{grid-template-columns:1fr}}
 @media(max-width:680px){.form-row{grid-template-columns:1fr}nav{padding:.85rem 1.25rem}.n-links{display:none}.cbox-inner{padding:1.75rem 1.5rem}}
 @media(max-width:420px){.lang-row .lbtn:not(.active){display:none}}
+
+/* ── WhatsApp float button ── */
+.wa-float {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  background: #25D366;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: .82rem;
+  letter-spacing: .01em;
+  text-decoration: none;
+  padding: .62rem 1.1rem .62rem .75rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 18px rgba(37,211,102,.45);
+  transition: transform .18s, box-shadow .18s;
+}
+.wa-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(37,211,102,.6);
+}
+.wa-float svg { flex-shrink: 0; }
+@media (max-width: 480px) {
+  .wa-float span { display: none; }
+  .wa-float { padding: .75rem; border-radius: 50%; }
+}
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Alpha Global EU","url":"https://www.alpha-global.eu/","foundingDate":"2026","description":"B2B e-commerce distribution, wholesale and import company based in Warsaw, Poland. Active sales channels on European platforms including Amazon and Allegro.","address":{"@type":"PostalAddress","addressLocality":"Warsaw","addressCountry":"PL"},"contactPoint":{"@type":"ContactPoint","email":"info@alpha-global.eu","contactType":"sales","availableLanguage":["Polish","English","German","Russian","Ukrainian"]},"areaServed":"EU","knowsLanguage":["pl","en","de","ru","uk"]}
@@ -371,7 +403,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
       <div class="wy rv d4">
         <div class="wy-ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
         <h4 data-i18n="w4h">Uczciwe warunki</h4>
-        <p data-i18n="w4p">Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośredników.</p>
+        <p data-i18n="w4p">Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośrednвикów.</p>
       </div>
     </div>
   </div>
@@ -444,79 +476,90 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
     <div class="lm-content" data-llang="pl">
       <h2>Impressum</h2>
       <h3>Dane firmy</h3>
-      <p><strong>Alpha Global EU</strong><br>
-      <span class="lm-ph">Pełna nazwa prawna sp. z o.o. / JDG — do uzupełnienia</span><br>
-      <span class="lm-ph">Ulica, nr · 00-000 Warszawa, Polska</span></p>
+      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>
+      ul. Ostrobramska 101A / 301<br>
+      04-041 Warszawa, Polska</p>
       <h3>Rejestracja</h3>
-      <p>NIP: <span class="lm-ph">XX-XXX-XX-XX</span><br>
-      KRS / CEIDG: <span class="lm-ph">XXXXXXXXXX</span><br>
-      REGON: <span class="lm-ph">XXXXXXXXX</span></p>
+      <p>NIP: 113-319-12-06<br>
+      VAT-UE: PL1133191206<br>
+      KRS: <span class="lm-ph">[do uzupełnienia]</span><br>
+      REGON: <span class="lm-ph">[do uzupełnienia]</span><br>
+      Kapitał zakładowy: 5.000 zł</p>
       <h3>Kontakt</h3>
-      <p>E-mail: <strong>info@alpha-global.eu</strong><br>
+      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>
+      WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Napisz do nas</a><br>
       WWW: <strong>www.alpha-global.eu</strong></p>
-      <h3>Rok założenia</h3>
-      <p>2026</p>
     </div>
 
     <div class="lm-content" data-llang="en">
       <h2>Legal Notice</h2>
       <h3>Company details</h3>
-      <p><strong>Alpha Global EU</strong><br>
-      <span class="lm-ph">Full legal name — to be completed</span><br>
-      <span class="lm-ph">Street, No. · 00-000 Warsaw, Poland</span></p>
+      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>
+      ul. Ostrobramska 101A / 301<br>
+      04-041 Warsaw, Poland</p>
       <h3>Registration</h3>
-      <p>NIP (Tax ID): <span class="lm-ph">XX-XXX-XX-XX</span><br>
-      KRS / CEIDG: <span class="lm-ph">XXXXXXXXXX</span><br>
-      REGON: <span class="lm-ph">XXXXXXXXX</span></p>
+      <p>NIP (Tax ID): 113-319-12-06<br>
+      VAT-EU: PL1133191206<br>
+      KRS: <span class="lm-ph">[to be completed]</span><br>
+      REGON: <span class="lm-ph">[to be completed]</span><br>
+      Share capital: PLN 5,000</p>
       <h3>Contact</h3>
-      <p>Email: <strong>info@alpha-global.eu</strong><br>
+      <p>Email: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>
+      WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Message us</a><br>
       Web: <strong>www.alpha-global.eu</strong></p>
-      <h3>Founded</h3>
-      <p>2026</p>
     </div>
 
     <div class="lm-content" data-llang="de">
       <h2>Impressum</h2>
       <h3>Angaben zum Unternehmen</h3>
-      <p><strong>Alpha Global EU</strong><br>
-      <span class="lm-ph">Vollständiger Firmenname — bitte ergänzen</span><br>
-      <span class="lm-ph">Straße, Nr. · 00-000 Warschau, Polen</span></p>
+      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>
+      ul. Ostrobramska 101A / 301<br>
+      04-041 Warschau, Polen</p>
       <h3>Registrierung</h3>
-      <p>NIP (Steuer-ID): <span class="lm-ph">XX-XXX-XX-XX</span><br>
-      KRS / CEIDG: <span class="lm-ph">XXXXXXXXXX</span><br>
-      REGON: <span class="lm-ph">XXXXXXXXX</span></p>
+      <p>NIP (Steuer-ID): 113-319-12-06<br>
+      VAT-EU: PL1133191206<br>
+      KRS: <span class="lm-ph">[zu ergänzen]</span><br>
+      REGON: <span class="lm-ph">[zu ergänzen]</span><br>
+      Stammkapital: 5.000 PLN</p>
       <h3>Kontakt</h3>
-      <p>E-Mail: <strong>info@alpha-global.eu</strong><br>
+      <p>E-Mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>
+      WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Schreiben Sie uns</a><br>
       Web: <strong>www.alpha-global.eu</strong></p>
-      <h3>Gründungsjahr</h3>
-      <p>2026</p>
     </div>
 
     <div class="lm-content" data-llang="ru">
       <h2>Реквизиты</h2>
       <h3>Данные компании</h3>
-      <p><strong>Alpha Global EU</strong><br>
-      <span class="lm-ph">Полное юридическое наименование — заполнить</span><br>
-      <span class="lm-ph">Улица, № · 00-000 Варшава, Польша</span></p>
+      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>
+      ul. Ostrobramska 101A / 301<br>
+      04-041 Варшава, Польша</p>
       <h3>Регистрация</h3>
-      <p>NIP (ИНН): <span class="lm-ph">XX-XXX-XX-XX</span><br>
-      KRS / CEIDG: <span class="lm-ph">XXXXXXXXXX</span></p>
+      <p>NIP (ИНН): 113-319-12-06<br>
+      VAT-EU: PL1133191206<br>
+      KRS: <span class="lm-ph">[заполнить]</span><br>
+      REGON: <span class="lm-ph">[заполнить]</span><br>
+      Уставной капитал: 5 000 PLN</p>
       <h3>Контакт</h3>
-      <p>E-mail: <strong>info@alpha-global.eu</strong><br>
+      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>
+      WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Написать нам</a><br>
       Сайт: <strong>www.alpha-global.eu</strong></p>
     </div>
 
     <div class="lm-content" data-llang="ua">
       <h2>Реквізити</h2>
       <h3>Дані компанії</h3>
-      <p><strong>Alpha Global EU</strong><br>
-      <span class="lm-ph">Повне юридичне найменування — заповнити</span><br>
-      <span class="lm-ph">Вулиця, № · 00-000 Варшава, Польща</span></p>
+      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>
+      ul. Ostrobramska 101A / 301<br>
+      04-041 Варшава, Польща</p>
       <h3>Реєстрація</h3>
-      <p>NIP (ПДВ): <span class="lm-ph">XX-XXX-XX-XX</span><br>
-      KRS / CEIDG: <span class="lm-ph">XXXXXXXXXX</span></p>
+      <p>NIP (ПДВ): 113-319-12-06<br>
+      VAT-EU: PL1133191206<br>
+      KRS: <span class="lm-ph">[заповнити]</span><br>
+      REGON: <span class="lm-ph">[заповнити]</span><br>
+      Статутний капітал: 5 000 PLN</p>
       <h3>Контакт</h3>
-      <p>E-mail: <strong>info@alpha-global.eu</strong><br>
+      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>
+      WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Написати нам</a><br>
       Сайт: <strong>www.alpha-global.eu</strong></p>
     </div>
   </div>
@@ -612,7 +655,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
       <h3>Які дані ми збираємо</h3>
       <p>Через контактну форму ми збираємо: ім'я, e-mail, назву компанії та зміст повідомлення. Дані обробляються виключно для відповіді на запит.</p>
       <h3>Ваші права</h3>
-      <p>Ви маєте право: отримати доступ до даних, виправити, видалити їх, обмежити обробку, а також подати скаргу до наглядового органу.</p>
+      <p>Ви маєте право: отримати доступ до даних, виправити, видалити їх, обмежити обробку, а також подати скаргу до надзорного органу.</p>
       <h3>Cookies</h3>
       <p>Цей сайт не використовує файли cookie для відстеження або аналітики.</p>
     </div>
@@ -667,7 +710,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
       <h3>Allgemeines</h3>
       <p>Diese Website (www.alpha-global.eu) gehört zu <strong>Alpha Global EU</strong>, Warschau, Polen.</p>
       <h3>Charakter der Website</h3>
-      <p>Diese Website dient der Information und stellt die Unternehmenstätigkeit vor. Das Ausfüllen des Kontaktformulars stellt keinen Vertragsschluss dar, sondern eine Einladung zur Kontaktaufnahme.</p>
+      <p>Diese Website dient der Information und stellt die Unternehmensтätigkeit vor. Das Ausfüllen des Kontaktformulars stellt keinen Vertragsschluss dar, sondern eine Einladung zur Kontaktaufnahme.</p>
       <h3>Haftungsausschluss</h3>
       <p>Die auf dieser Website dargestellten Inhalte dienen ausschließlich zur Information. Alpha Global EU haftet nicht für Entscheidungen, die auf Basis der hier enthaltenen Informationen ohne vorherige Rücksprache getroffen werden.</p>
       <h3>Geistiges Eigentum</h3>
@@ -687,7 +730,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
       <h3>Характер сайта</h3>
       <p>Сайт носит информационный характер. Заполнение контактной формы не является заключением договора, а лишь приглашением к деловому общению.</p>
       <h3>Ограничение ответственности</h3>
-      <p>Alpha Global EU не несёт ответственности за решения, принятые на основе информации сайта без предварительной консультации с компанией.</p>
+      <p>Alpha Global EU не несёт ответственности за решения, принятые на основании информации сайта без предварительной консультации с компанией.</p>
       <h3>Контакт</h3>
       <p>По вопросам условий: <strong>info@alpha-global.eu</strong></p>
     </div>
@@ -709,7 +752,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2rem;display:flex;align
 </div>
 
 <script>
-// ── TRANSLATIONS ─────────────────────────────────────────────────
+// ── TRANSLATIONS ───────────────────────────────────────────────────────────────
 const T={
 pl:{
   n_svc:"Usługi",n_part:"Partnerzy",n_about:"O nas",n_ctc:"Kontakt",n_btn:"Skontaktuj się",
@@ -729,7 +772,7 @@ pl:{
   w1h:"Niezawodność",w1p:"Dotrzymujemy terminów. Komunikujemy jasno. Żadnych niespodzianek.",
   w2h:"Sprawna realizacja",w2p:"Płaskie struktury, szybkie decyzje — od zapytania do działania bez zbędnej biurokracji.",
   w3h:"Bezpośredni kontakt",w3p:"Rozmawiasz z ludźmi, którzy faktycznie realizują Twoje zlecenie.",
-  w4h:"Uczciwe warunki",w4p:"Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośredników.",
+  w4h:"Uczciwe warunki",w4p:"Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośrednвикów.",
   c_lbl:"Kontakt",c_title:"Wyślij zapytanie",c_sub:"Odpowiadamy w ciągu 24 godzin — zawsze bezpośrednio.",
   f1l:"Imię i nazwisko *",f1p:"Jan Kowalski",f2l:"Firma",f2p:"Firma sp. z o.o.",f3l:"E-mail *",f3p:"jan@firma.pl",f4l:"Temat",
   fo1:"Dystrybucja / partnerstwo",fo2:"Fulfillment / logistyka",fo3:"Wholesale / hurt",fo4:"Inne",
@@ -836,7 +879,7 @@ ua:{
   w_lbl:"Про нас",w_title:"Чому Alpha Global EU",w_sub:"Гнучко, ефективно, з досвідом — єдиний контакт для всього ланцюга e-commerce.",
   w1h:"Надійність",w1p:"Дотримуємо строків. Спілкуємось чітко. Жодних несподіванок.",
   w2h:"Швидке виконання",w2p:"Плоска структура, швидкі рішення — від запиту до дії без бюрократії.",
-  w3h:"Прямий контакт",w3p:"Ви спілкуєтеся з людьми, які реально виконують ваше замовлення.",
+  w3h:"Прямий контакт",w3p:"Ви спілкуєтесь з людьми, які реально виконують ваше замовлення.",
   w4h:"Чесні умови",w4p:"Прямі відносини з постачальниками і партнерами — без зайвих посередників.",
   c_lbl:"Контакт",c_title:"Надіслати запит",c_sub:"Відповідаємо протягом 24 годин — завжди напряму.",
   f1l:"Ваше ім'я *",f1p:"Іван Іваненко",f2l:"Компанія",f2p:"ТОВ Компанія",f3l:"E-mail *",f3p:"ivan@company.ua",f4l:"Тема",
@@ -848,7 +891,7 @@ ua:{
 }
 };
 
-// ── I18N ──────────────────────────────────────────────────────
+// ── I18N ─────────────────────────────────────────────────────────────
 let lang='pl';
 function setLang(c){
   if(!T[c])return; lang=c;
@@ -874,7 +917,7 @@ function setLang(c){
 document.querySelectorAll('.lbtn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 try{const s=localStorage.getItem('age_lang');if(s&&T[s])setLang(s);}catch(e){}
 
-// ── CANVAS PARTICLE NETWORK ───────────────────────────────────
+// ── CANVAS PARTICLE NETWORK ───────────────────────────────────────────
 (function(){
   const cv=document.getElementById('bg');
   const ctx=cv.getContext('2d');
@@ -902,15 +945,15 @@ try{const s=localStorage.getItem('age_lang');if(s&&T[s])setLang(s);}catch(e){}
   draw();
 })();
 
-// ── NAV SCROLL ────────────────────────────────────────────────
+// ── NAV SCROLL ──────────────────────────────────────────────────────────
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50);},{passive:true});
 
-// ── REVEAL ────────────────────────────────────────────────────
+// ── REVEAL ────────────────────────────────────────────────────────────────
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 
-// ── FORM ──────────────────────────────────────────────────────
+// ── FORM ─────────────────────────────────────────────────────────────────
 document.getElementById('cf').addEventListener('submit',function(e){
   e.preventDefault();
   const btn=this.querySelector('.f-btn');
@@ -918,7 +961,7 @@ document.getElementById('cf').addEventListener('submit',function(e){
   document.getElementById('fok').style.display='block';
 });
 
-// ── LEGAL MODALS ──────────────────────────────────────────────
+// ── LEGAL MODALS ──────────────────────────────────────────────────────────
 function openLegal(id){
   const modal=document.getElementById('modal-'+id);
   if(!modal)return;
@@ -951,5 +994,13 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLegal();});
   };
 })();
 </script>
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/48518771793" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.286a.75.75 0 0 0 .921.914l5.57-1.459A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.715 9.715 0 0 1-4.937-1.343l-.353-.21-3.654.957.983-3.558-.229-.368A9.715 9.715 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+  </svg>
+  <span>WhatsApp</span>
+</a>
 </body>
 </html>
