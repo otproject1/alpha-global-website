@@ -1,1836 +1,280 @@
-<!DOCTYPE html>
-<html lang="pl" data-type="service" data-radius="soft" data-buttons="solid" data-motion="true">
+<!doctype html>
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="page-type" content="service">
-<meta name="site-kind" content="other">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alpha Global EU – Dystrybucja e-commerce, hurt, import | Warszawa</title>
-<meta name="description" content="Alpha Global EU – Twój partner B2B w Europie. Dystrybucja e-commerce, fulfillment, wholesale i import z Chin na rynek europejski. Warszawa, Polska.">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Alpha Global EU – Twój partner B2B w Europie. Dystrybucja e-commerce, fulfillment, hurt i import z Chin na rynek europejski. Warszawa, Polska.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://www.alpha-global.eu/">
-<link rel="alternate" hreflang="x-default" href="https://www.alpha-global.eu/">
 <link rel="alternate" hreflang="pl" href="https://www.alpha-global.eu/">
-<link rel="alternate" hreflang="en" href="https://www.alpha-global.eu/">
-<link rel="alternate" hreflang="de" href="https://www.alpha-global.eu/">
-<link rel="alternate" hreflang="ru" href="https://www.alpha-global.eu/">
-<link rel="alternate" hreflang="uk" href="https://www.alpha-global.eu/">
+<link rel="alternate" hreflang="en" href="https://www.alpha-global.eu/en/">
+<link rel="alternate" hreflang="de" href="https://www.alpha-global.eu/de/">
+<link rel="alternate" hreflang="ru" href="https://www.alpha-global.eu/ru/">
+<link rel="alternate" hreflang="uk" href="https://www.alpha-global.eu/uk/">
+<link rel="alternate" hreflang="x-default" href="https://www.alpha-global.eu/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.alpha-global.eu/">
-<meta property="og:title" content="Alpha Global EU – E-Commerce Distribution Partner in Europe">
-<meta property="og:description" content="Your single point of contact for e-commerce distribution, wholesale and import across the European market. Warsaw, Poland.">
-<meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Alpha Global EU">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alpha Global EU – E-Commerce Distribution Partner in Europe">
-<meta name="twitter:description" content="Your single point of contact for e-commerce distribution, wholesale and import across the European market.">
-<meta name="theme-color" content="#030711">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='%231D4ED8'/%3E%3Ctext x='18' y='25' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='15' fill='white' letter-spacing='-1'%3EAG%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-/* ── RESET & BASE ── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{
-  font-family:'Inter',system-ui,sans-serif;
-  background:#030711;
-  color:#E8EDF8;
-  overflow-x:hidden;
-  line-height:1.65;
-}
-h1,h2,h3,h4,h5{
-  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
-  font-weight:700;
-  line-height:1.1;
-  letter-spacing:-.03em;
-}
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-
-/* ── DESIGN TOKENS ── */
-:root{
-  /* Backgrounds */
-  --bg-base:#030711;
-  --bg-surface:#080E1E;
-  --bg-raised:#0D1526;
-  --bg-card:#0F1A2E;
-  /* Typography */
-  --text-primary:#E8EDF8;
-  --text-secondary:#8B9AB8;
-  --text-muted:#4E5F7A;
-  /* Brand */
-  --blue:#2563EB;
-  --blue-light:#3B82F6;
-  --blue-glow:rgba(37,99,235,.18);
-  --cyan:#06B6D4;
-  --cyan-glow:rgba(6,182,212,.12);
-  /* UI */
-  --border:rgba(255,255,255,.07);
-  --border-hover:rgba(255,255,255,.12);
-  --border-blue:rgba(37,99,235,.3);
-  /* Radius */
-  --r-sm:8px;
-  --r-md:14px;
-  --r-lg:20px;
-  --r-xl:28px;
-  /* Layout */
-  --max:1200px;
-  --gap-section:9rem;
-}
-
-/* ── SKIP LINK ── */
-.skip-link{
-  position:absolute;top:-100%;left:0;
-  background:var(--blue);color:#fff;
-  padding:.5rem 1.25rem;z-index:9999;
-  border-radius:0 0 8px 0;font-weight:600;font-size:.85rem;
-  transition:top .2s;
-}
-.skip-link:focus{top:0}
-
-/* ── NAVIGATION ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:500;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 2.5rem;
-  height:68px;
-  transition:background .4s, box-shadow .4s;
-}
-nav.scrolled{
-  background:rgba(3,7,17,.88);
-  backdrop-filter:blur(20px) saturate(180%);
-  box-shadow:0 1px 0 var(--border);
-}
-
-/* Logo */
-.n-logo{
-  display:flex;align-items:center;gap:.7rem;
-  flex-shrink:0;
-  text-decoration:none;
-}
-.logo-mark{
-  width:34px;height:34px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:9px;
-  background:linear-gradient(135deg,var(--blue) 0%,#1E40AF 100%);
-  box-shadow:0 0 0 1px rgba(37,99,235,.5), 0 2px 12px rgba(37,99,235,.4);
-}
-.logo-mark span{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;font-size:13px;color:#fff;
-  letter-spacing:-.05em;line-height:1;
-}
-.n-wordmark{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;font-size:1rem;
-  letter-spacing:-.03em;color:var(--text-primary);
-}
-.n-wordmark em{
-  font-style:normal;
-  background:linear-gradient(120deg,var(--blue-light),var(--cyan));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-
-/* Nav links */
-.n-links{
-  display:flex;gap:2.25rem;list-style:none;
-  position:absolute;left:50%;transform:translateX(-50%);
-}
-.n-links a{
-  color:var(--text-secondary);
-  font-size:.82rem;font-weight:500;
-  letter-spacing:.01em;
-  transition:color .2s;
-}
-.n-links a:hover{color:var(--text-primary)}
-
-/* Nav right */
-.n-right{
-  display:flex;align-items:center;gap:.5rem;flex-shrink:0;
-}
-.lang-row{display:flex;gap:.18rem}
-.lbtn{
-  background:transparent;
-  border:1px solid transparent;
-  color:var(--text-muted);
-  padding:.22rem .48rem;
-  border-radius:5px;
-  font-size:.68rem;font-weight:700;
-  cursor:pointer;letter-spacing:.06em;
-  transition:all .2s;
-  font-family:'Plus Jakarta Sans',sans-serif;
-}
-.lbtn:hover,.lbtn.active{
-  color:var(--blue-light);
-  border-color:var(--border-blue);
-  background:rgba(37,99,235,.08);
-}
-.n-cta{
-  display:inline-flex;align-items:center;gap:.4rem;
-  background:var(--blue);
-  color:#fff;
-  padding:.52rem 1.1rem;
-  border-radius:var(--r-sm);
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:.8rem;
-  letter-spacing:.01em;
-  transition:background .2s, transform .15s, box-shadow .2s;
-  margin-left:.5rem;
-  white-space:nowrap;
-}
-.n-cta:hover{
-  background:#1D4ED8;
-  transform:translateY(-1px);
-  box-shadow:0 6px 24px rgba(37,99,235,.4);
-}
-
-/* ── HERO ── */
-.hero{
-  position:relative;
-  min-height:100vh;
-  display:flex;align-items:center;
-  overflow:hidden;
-}
-
-/* Geometric background decoration */
-.hero-bg{
-  position:absolute;inset:0;z-index:0;
-  overflow:hidden;
-  pointer-events:none;
-}
-.hero-bg::before{
-  content:'';
-  position:absolute;
-  top:-30%;left:-10%;
-  width:900px;height:900px;
-  background:radial-gradient(ellipse at center,rgba(37,99,235,.12) 0%,transparent 65%);
-  pointer-events:none;
-}
-.hero-bg::after{
-  content:'';
-  position:absolute;
-  bottom:-20%;right:-5%;
-  width:700px;height:700px;
-  background:radial-gradient(ellipse at center,rgba(6,182,212,.07) 0%,transparent 65%);
-  pointer-events:none;
-}
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
-  background-size:60px 60px;
-  mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(0,0,0,.7),transparent);
-  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(0,0,0,.7),transparent);
-}
-
-/* Hero floating badge */
-.hero-badge{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.35rem .9rem;
-  border:1px solid var(--border-blue);
-  border-radius:100px;
-  background:rgba(37,99,235,.07);
-  font-size:.72rem;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  color:var(--blue-light);
-  margin-bottom:1.75rem;
-}
-.hero-badge-dot{
-  width:5px;height:5px;
-  background:var(--cyan);border-radius:50%;
-  animation:pulse 2.5s ease-in-out infinite;
-}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
-
-.hero-inner{
-  position:relative;z-index:2;
-  width:100%;max-width:var(--max);
-  margin:0 auto;
-  padding:9rem 2.5rem 6rem;
-  display:grid;
-  grid-template-columns:1fr 480px;
-  gap:5rem;
-  align-items:center;
-}
-.hero-content{}
-.hero h1{
-  font-size:clamp(3.2rem,5.5vw,5.2rem);
-  font-weight:800;
-  letter-spacing:-.05em;
-  line-height:1.03;
-  margin-bottom:1.75rem;
-  color:var(--text-primary);
-}
-.hero h1 .h-line2{
-  display:block;
-  background:linear-gradient(130deg,var(--blue-light) 20%,var(--cyan) 80%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.hero-lead{
-  font-size:1.08rem;
-  color:var(--text-secondary);
-  line-height:1.78;
-  max-width:520px;
-  margin-bottom:2.5rem;
-}
-.hero-actions{
-  display:flex;gap:.85rem;flex-wrap:wrap;align-items:center;
-}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:.45rem;
-  background:var(--blue);color:#fff;
-  padding:.85rem 2rem;
-  border-radius:var(--r-md);
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:.92rem;
-  transition:background .2s, transform .15s, box-shadow .2s;
-}
-.btn-primary:hover{
-  background:#1D4ED8;
-  transform:translateY(-2px);
-  box-shadow:0 12px 36px rgba(37,99,235,.4);
-}
-.btn-ghost{
-  display:inline-flex;align-items:center;gap:.45rem;
-  color:var(--text-secondary);
-  padding:.85rem 1.75rem;
-  border-radius:var(--r-md);
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:600;font-size:.92rem;
-  border:1px solid var(--border);
-  transition:all .2s;
-}
-.btn-ghost:hover{
-  color:var(--text-primary);
-  border-color:var(--border-hover);
-  background:rgba(255,255,255,.03);
-}
-
-/* Hero right panel */
-.hero-panel{
-  position:relative;
-}
-.hero-panel-inner{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--r-xl);
-  padding:2rem;
-  position:relative;
-  overflow:hidden;
-}
-.hero-panel-inner::before{
-  content:'';
-  position:absolute;
-  top:0;left:50%;transform:translateX(-50%);
-  width:60%;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(37,99,235,.5),transparent);
-}
-.hp-label{
-  font-size:.65rem;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  color:var(--text-muted);
-  margin-bottom:1.5rem;
-}
-.hp-row{
-  display:flex;align-items:center;gap:.85rem;
-  padding:.85rem 0;
-  border-bottom:1px solid var(--border);
-}
-.hp-row:last-child{border-bottom:none}
-.hp-icon{
-  width:36px;height:36px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:var(--r-sm);
-  background:rgba(37,99,235,.1);
-  border:1px solid var(--border-blue);
-}
-.hp-icon svg{width:16px;height:16px;stroke:var(--blue-light);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.hp-title{font-size:.85rem;font-weight:600;color:var(--text-primary);margin-bottom:.18rem}
-.hp-sub{font-size:.74rem;color:var(--text-secondary);line-height:1.45}
-.hp-badge{
-  margin-left:auto;flex-shrink:0;
-  font-size:.62rem;font-weight:700;letter-spacing:.06em;
-  padding:.2rem .55rem;border-radius:100px;
-  background:rgba(6,182,212,.08);
-  border:1px solid rgba(6,182,212,.2);
-  color:var(--cyan);
-}
-
-/* ── SECTION SHARED ── */
-.section{padding:var(--gap-section) 2.5rem}
-.section-alt{background:var(--bg-surface)}
-.wrap{max-width:var(--max);margin:0 auto}
-
-.section-label{
-  display:block;
-  font-size:.68rem;font-weight:700;
-  letter-spacing:.15em;text-transform:uppercase;
-  color:var(--blue-light);
-  margin-bottom:1rem;
-}
-.section-title{
-  font-size:clamp(2rem,4vw,3rem);
-  font-weight:800;
-  letter-spacing:-.04em;
-  color:var(--text-primary);
-  margin-bottom:1rem;
-}
-.section-sub{
-  font-size:1rem;
-  color:var(--text-secondary);
-  line-height:1.78;
-  max-width:520px;
-}
-.section-head{margin-bottom:4rem}
-.section-head.center{text-align:center}
-.section-head.center .section-sub{margin:0 auto}
-
-/* Divider */
-.divider{
-  height:1px;
-  background:linear-gradient(90deg,transparent,var(--border),transparent);
-}
-
-/* ── SERVICES SECTION ── */
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1.5rem;
-}
-.service-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--r-xl);
-  padding:2.75rem 2.5rem;
-  position:relative;
-  overflow:hidden;
-  transition:border-color .3s, transform .25s, box-shadow .3s;
-  cursor:default;
-}
-.service-card::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  border-radius:inherit;
-  background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(37,99,235,.06),transparent);
-  opacity:0;
-  transition:opacity .3s;
-  pointer-events:none;
-}
-.service-card:hover{
-  border-color:var(--border-blue);
-  transform:translateY(-3px);
-  box-shadow:0 20px 60px rgba(0,0,0,.4), 0 0 0 1px rgba(37,99,235,.12);
-}
-.service-card:hover::after{opacity:1}
-
-.sc-num{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:clamp(2.5rem,4vw,3.5rem);
-  letter-spacing:-.06em;
-  color:rgba(37,99,235,.12);
-  line-height:1;
-  margin-bottom:2rem;
-  display:block;
-}
-.sc-icon{
-  width:44px;height:44px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:12px;
-  background:rgba(37,99,235,.1);
-  border:1px solid var(--border-blue);
-  margin-bottom:1.5rem;
-}
-.sc-icon svg{width:20px;height:20px;stroke:var(--blue-light);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-.sc-title{
-  font-size:1.15rem;font-weight:700;
-  letter-spacing:-.02em;
-  color:var(--text-primary);
-  margin-bottom:.85rem;
-}
-.sc-desc{
-  font-size:.9rem;
-  color:var(--text-secondary);
-  line-height:1.78;
-  margin-bottom:1.75rem;
-}
-.sc-tags{display:flex;flex-wrap:wrap;gap:.35rem}
-.sc-tag{
-  padding:.22rem .7rem;
-  border-radius:5px;
-  font-size:.7rem;font-weight:500;
-  letter-spacing:.02em;
-  border:1px solid var(--border);
-  color:var(--text-muted);
-  background:transparent;
-  transition:border-color .2s, color .2s;
-}
-.sc-tag.accent{
-  border-color:var(--border-blue);
-  color:rgba(99,162,246,.85);
-  background:rgba(37,99,235,.06);
-}
-
-/* ── PARTNER SECTION ── */
-.partner-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:5rem;
-  align-items:center;
-}
-.partner-steps{
-  display:flex;flex-direction:column;gap:0;
-  margin-top:2.5rem;
-}
-.ps-item{
-  display:flex;gap:1.25rem;
-  padding:1.25rem 0;
-  border-bottom:1px solid var(--border);
-  position:relative;
-}
-.ps-item:last-child{border-bottom:none}
-.ps-item::before{
-  content:attr(data-step);
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:.7rem;
-  letter-spacing:.08em;
-  color:var(--blue-light);
-  min-width:28px;
-  padding-top:.12rem;
-}
-.ps-title{font-size:.9rem;font-weight:600;color:var(--text-primary);margin-bottom:.3rem}
-.ps-sub{font-size:.82rem;color:var(--text-secondary);line-height:1.6}
-
-/* Partner visual card */
-.partner-visual{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--r-xl);
-  overflow:hidden;
-  position:relative;
-}
-.partner-visual::before{
-  content:'';
-  position:absolute;
-  top:0;left:0;right:0;
-  height:1px;
-  background:linear-gradient(90deg,transparent,rgba(6,182,212,.4),transparent);
-}
-.pv-header{
-  padding:2rem 2rem 1.5rem;
-  border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:1rem;
-}
-.pv-title-wrap{}
-.pv-title-main{font-size:.92rem;font-weight:700;color:var(--text-primary)}
-.pv-title-sub{font-size:.74rem;color:var(--text-secondary);margin-top:.15rem}
-.pv-status{
-  margin-left:auto;
-  font-size:.62rem;font-weight:700;letter-spacing:.06em;
-  padding:.2rem .55rem;border-radius:100px;
-  background:rgba(34,197,94,.08);
-  border:1px solid rgba(34,197,94,.2);
-  color:#4ADE80;
-}
-.pv-body{padding:0}
-.pv-row{
-  display:flex;align-items:flex-start;gap:1rem;
-  padding:1.1rem 2rem;
-  border-bottom:1px solid var(--border);
-  transition:background .2s;
-}
-.pv-row:last-child{border-bottom:none}
-.pv-row:hover{background:rgba(255,255,255,.02)}
-.pv-ic{
-  width:32px;height:32px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:8px;
-  background:rgba(37,99,235,.08);
-  margin-top:.05rem;
-}
-.pv-ic svg{width:14px;height:14px;stroke:var(--blue-light);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-.pv-info{}
-.pv-info-title{font-size:.82rem;font-weight:600;color:var(--text-primary);margin-bottom:.18rem}
-.pv-info-sub{font-size:.74rem;color:var(--text-secondary);line-height:1.5}
-
-/* ── TYPE MOMENT ── */
-.moment-band{
-  padding:6rem 2.5rem;
-  background:var(--bg-surface);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  overflow:hidden;
-  position:relative;
-}
-.moment-band::before{
-  content:'';
-  position:absolute;
-  left:50%;top:0;bottom:0;transform:translateX(-50%);
-  width:1200px;
-  background:radial-gradient(ellipse 50% 100% at 50% 50%,rgba(37,99,235,.06),transparent);
-  pointer-events:none;
-}
-.moment-inner{
-  max-width:var(--max);margin:0 auto;
-  display:flex;align-items:center;gap:5rem;
-  position:relative;z-index:1;
-}
-.moment-stat{text-align:center;min-width:140px;flex-shrink:0}
-.moment-stat-val{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:clamp(2.5rem,4vw,3.5rem);
-  letter-spacing:-.05em;
-  line-height:1;
-  margin-bottom:.35rem;
-  background:linear-gradient(130deg,var(--blue-light),var(--cyan));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.moment-stat-label{
-  font-size:.74rem;font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;
-  color:var(--text-muted);
-}
-.moment-divider{
-  width:1px;height:60px;
-  background:var(--border);
-  flex-shrink:0;
-}
-.moment-quote{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-size:clamp(1.4rem,2.5vw,2rem);
-  font-weight:700;
-  letter-spacing:-.03em;
-  line-height:1.3;
-  color:var(--text-primary);
-}
-.moment-quote em{
-  font-style:normal;
-  background:linear-gradient(130deg,var(--blue-light),var(--cyan));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-
-/* ── WHY US ── */
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:1.5rem;
-}
-.why-card{
-  background:var(--bg-raised);
-  border:1px solid var(--border);
-  border-radius:var(--r-lg);
-  padding:2rem;
-  display:flex;gap:1.25rem;
-  transition:border-color .3s;
-}
-.why-card:hover{border-color:var(--border-hover)}
-.why-icon{
-  width:42px;height:42px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:10px;
-  background:rgba(37,99,235,.1);
-  border:1px solid var(--border-blue);
-}
-.why-icon svg{width:19px;height:19px;stroke:var(--blue-light);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-.why-body{}
-.why-title{font-size:.95rem;font-weight:700;color:var(--text-primary);margin-bottom:.45rem}
-.why-desc{font-size:.86rem;color:var(--text-secondary);line-height:1.7}
-
-/* ── CONTACT SECTION ── */
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:5rem;
-  align-items:start;
-}
-.contact-info{}
-.contact-info-title{
-  font-size:clamp(1.75rem,3vw,2.5rem);
-  font-weight:800;
-  letter-spacing:-.04em;
-  color:var(--text-primary);
-  margin-bottom:1rem;
-}
-.contact-info-sub{
-  font-size:1rem;
-  color:var(--text-secondary);
-  line-height:1.78;
-  margin-bottom:2.5rem;
-}
-.contact-links{
-  display:flex;flex-direction:column;gap:.85rem;
-}
-.contact-link-item{
-  display:flex;align-items:center;gap:.85rem;
-  padding:1rem 1.25rem;
-  background:var(--bg-raised);
-  border:1px solid var(--border);
-  border-radius:var(--r-md);
-  color:var(--text-secondary);
-  font-size:.88rem;
-  transition:border-color .2s, color .2s, background .2s;
-  text-decoration:none;
-}
-.contact-link-item:hover{
-  border-color:var(--border-blue);
-  color:var(--text-primary);
-  background:rgba(37,99,235,.04);
-}
-.cli-icon{
-  width:34px;height:34px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:8px;
-  background:rgba(37,99,235,.1);
-}
-.cli-icon svg{width:15px;height:15px;stroke:var(--blue-light);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.cli-label{font-size:.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700;display:block;margin-bottom:.12rem}
-.cli-val{font-size:.88rem;color:var(--text-primary);font-weight:500}
-
-/* Contact form box */
-.contact-form-wrap{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--r-xl);
-  padding:2.5rem;
-  position:relative;overflow:hidden;
-}
-.contact-form-wrap::before{
-  content:'';
-  position:absolute;top:0;left:20%;right:20%;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(37,99,235,.4),transparent);
-}
-.fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.85rem}
-label{
-  font-size:.66rem;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;
-  color:var(--text-muted);
-}
-input,select,textarea{
-  background:rgba(255,255,255,.03);
-  border:1px solid var(--border);
-  border-radius:var(--r-sm);
-  color:var(--text-primary);
-  padding:.72rem .95rem;
-  font-family:'Inter',sans-serif;
-  font-size:.88rem;outline:none;
-  transition:border-color .2s, background .2s;
-  width:100%;
-}
-input::placeholder,textarea::placeholder{color:var(--text-muted)}
-input:focus,select:focus,textarea:focus{
-  border-color:rgba(37,99,235,.5);
-  background:rgba(37,99,235,.04);
-}
-select{cursor:pointer}
-select option{background:#0D1526}
-textarea{resize:vertical;min-height:110px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
-.f-btn{
-  width:100%;
-  background:var(--blue);
-  color:#fff;border:none;
-  padding:.95rem;
-  border-radius:var(--r-md);
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;font-size:.92rem;
-  cursor:pointer;
-  transition:background .2s, transform .15s, box-shadow .2s;
-  margin-top:.5rem;
-  letter-spacing:.01em;
-}
-.f-btn:hover{
-  background:#1D4ED8;
-  transform:translateY(-2px);
-  box-shadow:0 12px 32px rgba(37,99,235,.4);
-}
-.f-ok{
-  display:none;
-  margin-top:.85rem;
-  padding:.75rem;
-  background:rgba(34,197,94,.07);
-  border:1px solid rgba(34,197,94,.18);
-  border-radius:var(--r-sm);
-  color:#4ADE80;
-  text-align:center;
-  font-size:.85rem;
-}
-
-/* ── FOOTER ── */
-footer{
-  background:var(--bg-surface);
-  border-top:1px solid var(--border);
-  padding:3rem 2.5rem 2rem;
-}
-.footer-top{
-  max-width:var(--max);margin:0 auto;
-  display:grid;
-  grid-template-columns:auto 1fr auto;
-  gap:3rem;
-  padding-bottom:2rem;
-  border-bottom:1px solid var(--border);
-}
-.footer-brand{}
-.footer-brand .n-wordmark{font-size:1rem}
-.footer-tagline{
-  font-size:.8rem;
-  color:var(--text-muted);
-  margin-top:.45rem;
-  max-width:200px;
-  line-height:1.55;
-}
-.footer-links-group{
-  display:flex;gap:4rem;
-  justify-content:center;
-}
-.footer-col-title{
-  font-size:.66rem;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  color:var(--text-muted);
-  margin-bottom:1rem;
-}
-.footer-col-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.footer-col-links a{
-  font-size:.82rem;color:var(--text-secondary);
-  transition:color .2s;
-}
-.footer-col-links a:hover{color:var(--text-primary)}
-
-.footer-contact-col{}
-.footer-contact-col .footer-col-title{margin-bottom:.85rem}
-.f-contact-row{
-  font-size:.82rem;color:var(--text-secondary);
-  display:flex;align-items:center;gap:.5rem;
-  margin-bottom:.45rem;
-}
-.f-contact-row a{color:var(--text-secondary);transition:color .2s}
-.f-contact-row a:hover{color:var(--text-primary)}
-
-.footer-bottom{
-  max-width:var(--max);margin:0 auto;
-  padding-top:1.5rem;
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:.85rem;
-}
-.footer-copy{font-size:.74rem;color:var(--text-muted)}
-
-/* ── LEGAL MODALS ── */
-#modal-overlay{
-  display:none;position:fixed;inset:0;
-  background:rgba(0,0,0,.85);z-index:900;
-  cursor:pointer;backdrop-filter:blur(6px);
-}
-.legal-modal{
-  display:none;position:fixed;inset:0;
-  z-index:1000;align-items:center;justify-content:center;
-  padding:1.5rem;overflow-y:auto;
-}
-.lm-inner{
-  background:var(--bg-raised);
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:var(--r-xl);
-  max-width:720px;width:100%;
-  max-height:85vh;overflow-y:auto;
-  padding:2.75rem 3rem;
-  position:relative;margin:auto;
-}
-.lm-close{
-  position:absolute;top:1.25rem;right:1.25rem;
-  background:transparent;border:1px solid var(--border);
-  color:var(--text-secondary);
-  width:34px;height:34px;border-radius:7px;
-  cursor:pointer;font-size:1.2rem;line-height:34px;
-  text-align:center;transition:all .2s;padding:0;
-}
-.lm-close:hover{color:var(--text-primary);border-color:var(--border-hover)}
-.lm-content{display:none}
-.lm-content.active{display:block}
-.lm-inner h2{
-  font-size:1.45rem;font-weight:800;
-  margin-bottom:1.75rem;padding-right:2.5rem;
-  letter-spacing:-.03em;
-}
-.lm-inner h3{
-  font-size:.68rem;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  color:var(--blue-light);
-  margin:1.5rem 0 .4rem;
-}
-.lm-inner p{color:var(--text-secondary);font-size:.88rem;line-height:1.8;margin-bottom:.5rem}
-.lm-inner strong{color:var(--text-primary);font-weight:600}
-.lm-inner ul{color:var(--text-secondary);font-size:.88rem;line-height:1.8;padding-left:1.25rem;margin-bottom:.5rem}
-.lm-inner ul li{margin-bottom:.2rem}
-.lm-ph{
-  background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.2);
-  border-radius:4px;padding:.08rem .38rem;
-  font-size:.78rem;color:rgba(99,162,246,.85);font-style:italic;
-}
-.lm-divider{height:1px;background:var(--border);margin:1.5rem 0}
-
-/* ── WHATSAPP FLOAT ── */
-.wa-float{
-  position:fixed;bottom:1.6rem;right:1.6rem;z-index:800;
-  display:flex;align-items:center;gap:.55rem;
-  background:#22C55E;color:#fff;
-  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
-  font-weight:700;font-size:.82rem;letter-spacing:.01em;
-  text-decoration:none;
-  padding:.62rem 1.1rem .62rem .75rem;
-  border-radius:2rem;
-  box-shadow:0 4px 20px rgba(34,197,94,.5);
-  transition:transform .18s, box-shadow .18s;
-}
-.wa-float:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 28px rgba(34,197,94,.65);
-}
-.wa-float svg{flex-shrink:0}
-
-/* ── REVEAL ANIMATIONS ── */
-.rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-
-/* Hero entrance */
-[data-enter] .rv-h{opacity:0;transform:translateY(28px)}
-[data-enter].entered .rv-h{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
-[data-enter].entered .rv-h:nth-child(2){transition-delay:.08s}
-[data-enter].entered .rv-h:nth-child(3){transition-delay:.16s}
-[data-enter].entered .rv-h:nth-child(4){transition-delay:.24s}
-[data-enter].entered .rv-h:nth-child(5){transition-delay:.32s}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1100px){
-  .hero-inner{grid-template-columns:1fr;gap:3rem;padding-top:8rem}
-  .hero-panel{display:none}
-  .services-grid{grid-template-columns:1fr}
-  .partner-grid{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr}
-  .moment-inner{flex-wrap:wrap;gap:3rem}
-  .footer-top{grid-template-columns:1fr;gap:2rem}
-  .footer-links-group{justify-content:flex-start}
-}
-@media(max-width:768px){
-  :root{--gap-section:6rem}
-  nav{padding:0 1.5rem}
-  .n-links{display:none}
-  .section,.moment-band{padding-left:1.5rem;padding-right:1.5rem}
-  .contact-form-wrap{padding:1.75rem}
-  .why-grid{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-}
-@media(max-width:480px){
-  .wa-float span{display:none}
-  .wa-float{padding:.7rem;border-radius:50%}
-  .lang-row .lbtn:not(.active){display:none}
-}
-</style>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Alpha Global EU","url":"https://www.alpha-global.eu/","foundingDate":"2026","description":"B2B e-commerce distribution, wholesale and import company based in Warsaw, Poland. Active sales channels on European platforms including Amazon and Allegro.","address":{"@type":"PostalAddress","addressLocality":"Warsaw","addressCountry":"PL"},"contactPoint":{"@type":"ContactPoint","email":"info@alpha-global.eu","contactType":"sales","availableLanguage":["Polish","English","German","Russian","Ukrainian"]},"areaServed":"EU","knowsLanguage":["pl","en","de","ru","uk"]}
-</script>
+<meta property="og:url" content="https://www.alpha-global.eu/">
+<meta property="og:title" content="Alpha Global EU – Dystrybucja e-commerce, hurt, import | Warszawa">
+<meta property="og:description" content="Alpha Global EU – Twój partner B2B w Europie. Dystrybucja e-commerce, fulfillment, hurt i import z Chin na rynek europejski. Warszawa, Polska.">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=source-serif-4:400,400i,600|ibm-plex-sans:400,500,600|ibm-plex-mono:400,500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.alpha-global.eu/#org","name":"Alpha Global EU","legalName":"ALPHA GLOBAL Sp. z o.o.","url":"https://www.alpha-global.eu/","foundingDate":"2026","description":"Alpha Global EU – Twój partner B2B w Europie. Dystrybucja e-commerce, fulfillment, hurt i import z Chin na rynek europejski. Warszawa, Polska.","email":"info@alpha-global.eu","vatID":"PL1133191206","address":{"@type":"PostalAddress","streetAddress":"ul. Ostrobramska 101A / 301","postalCode":"04-041","addressLocality":"Warszawa","addressCountry":"PL"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"info@alpha-global.eu","url":"https://wa.me/48518771793","availableLanguage":["pl","en","de","ru","uk"]},"areaServed":"EU","knowsLanguage":["pl","en","de","ru","uk"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Co robimy","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-Commerce & Sprzedaż","description":"Prowadzone aktywne kanały sprzedaży na platformach e-commerce w Europie. Obsługujemy listing, zamówienia, obsługę klienta oraz zwroty.","provider":{"@id":"https://www.alpha-global.eu/#org"},"areaServed":"EU"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Hurt & Dystrybucja","description":"Dystrybucja hurtowa do dealerów, sieci handlowych i partnerów B2B w całej Europie. Elastyczne warunki i bezpośrednia współpraca.","provider":{"@id":"https://www.alpha-global.eu/#org"},"areaServed":"EU"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Import & Sourcing","description":"Bezpośrednie pozyskiwanie towarów i części zamiennych — kontrola jakości, koordynacja transportu i odprawa celna po stronie naszej.","provider":{"@id":"https://www.alpha-global.eu/#org"},"areaServed":"EU"}}]}},{"@type":"WebSite","@id":"https://www.alpha-global.eu/#site","url":"https://www.alpha-global.eu/","name":"Alpha Global EU","publisher":{"@id":"https://www.alpha-global.eu/#org"},"inLanguage":["pl","en","de","ru","uk"]},{"@type":"WebPage","@id":"https://www.alpha-global.eu/#page","url":"https://www.alpha-global.eu/","name":"Alpha Global EU – Dystrybucja e-commerce, hurt, import | Warszawa","description":"Alpha Global EU – Twój partner B2B w Europie. Dystrybucja e-commerce, fulfillment, hurt i import z Chin na rynek europejski. Warszawa, Polska.","inLanguage":"pl","isPartOf":{"@id":"https://www.alpha-global.eu/#site"},"about":{"@id":"https://www.alpha-global.eu/#org"}}]}</script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Przejdź do treści głównej</a>
+<a class="skip" href="#main">Przejdź do treści</a>
 
-<!-- NAV -->
-<nav id="nav" aria-label="Nawigacja główna">
-  <a href="#" class="n-logo" aria-label="Alpha Global EU – strona główna">
-    <div class="logo-mark" aria-hidden="true"><span>AG</span></div>
-    <span class="n-wordmark">Alpha<em>Global</em>&nbsp;EU</span>
-  </a>
-  <ul class="n-links">
-    <li><a href="#uslugi" data-i18n="n_svc">Usługi</a></li>
-    <li><a href="#partner" data-i18n="n_part">Partnerzy</a></li>
-    <li><a href="#onas" data-i18n="n_about">O nas</a></li>
-    <li><a href="#kontakt" data-i18n="n_ctc">Kontakt</a></li>
-  </ul>
-  <div class="n-right">
-    <div class="lang-row">
-      <button class="lbtn active" data-lang="pl" aria-pressed="true" aria-label="Polski">PL</button>
-      <button class="lbtn" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
-      <button class="lbtn" data-lang="de" aria-pressed="false" aria-label="Deutsch">DE</button>
-      <button class="lbtn" data-lang="ru" aria-pressed="false" aria-label="Русский">RU</button>
-      <button class="lbtn" data-lang="ua" aria-pressed="false" aria-label="Українська">UA</button>
-    </div>
-    <a href="#kontakt" class="n-cta" data-i18n="n_btn">Skontaktuj się</a>
-  </div>
-</nav>
-
-<main id="main-content">
-
-<!-- ═══════════════════════ HERO ═══════════════════════ -->
-<section class="hero" aria-labelledby="hero-heading" data-enter>
-  <div class="hero-bg">
-    <div class="hero-grid" aria-hidden="true"></div>
-  </div>
-  <div class="hero-inner">
-    <div class="hero-content rv-h">
-      <div class="hero-badge rv-h">
-        <span class="hero-badge-dot"></span>
-        <span data-i18n="h_eye">B2B · Warszawa, Polska</span>
-      </div>
-      <h1 id="hero-heading" class="rv-h">
-        <span data-i18n="h_t1">Twój partner</span><br>
-        <span class="h-line2" data-i18n="h_t2">e-commerce</span><br>
-        <span data-i18n="h_t3">w Europie.</span>
-      </h1>
-      <p class="hero-lead rv-h" data-i18n="h_desc">Jesteśmy Twoim punktem kontaktowym w zakresie dystrybucji e-commerce, fulfillmentu i logistyki na rynku europejskim.</p>
-      <div class="hero-actions rv-h">
-        <a href="#kontakt" class="btn-primary" data-i18n="h_cta1">Napisz do nas</a>
-        <a href="#uslugi" class="btn-ghost" data-i18n="h_cta2">Nasze kompetencje</a>
-      </div>
-    </div>
-    <aside class="hero-panel rv-h" aria-hidden="true">
-      <div class="hero-panel-inner">
-        <div class="hp-label" data-i18n="hp_label">Aktywne kanały</div>
-        <div class="hp-row">
-          <div class="hp-icon"><svg viewBox="0 0 24 24"><path d="M20 12V22H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg></div>
-          <div>
-            <div class="hp-title">Amazon EU</div>
-            <div class="hp-sub">FBA · FBM · Pan-EU</div>
-          </div>
-          <span class="hp-badge">AKTYWNY</span>
-        </div>
-        <div class="hp-row">
-          <div class="hp-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div>
-            <div class="hp-title">Allegro PL</div>
-            <div class="hp-sub">Marketplace · Fulfillment</div>
-          </div>
-          <span class="hp-badge">AKTYWNY</span>
-        </div>
-        <div class="hp-row">
-          <div class="hp-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-          <div>
-            <div class="hp-title">B2B Wholesale</div>
-            <div class="hp-sub">PL · DE · EU · Import CN</div>
-          </div>
-          <span class="hp-badge">AKTYWNY</span>
-        </div>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════════════════════ SERVICES ═══════════════════════ -->
-<section class="section" id="uslugi" aria-labelledby="sv-heading">
+<div class="strip">
   <div class="wrap">
-    <div class="section-head rv">
-      <span class="section-label" data-i18n="sv_lbl">Kompetencje</span>
-      <h2 id="sv-heading" class="section-title" data-i18n="sv_title">Co robimy</h2>
-      <p class="section-sub" data-i18n="sv_sub">Kompleksowa obsługa e-commerce — od logistyki po dystrybucję na rynkach europejskich.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card rv d1">
-        <span class="sc-num" aria-hidden="true">01</span>
-        <div class="sc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
-        <div class="sc-title" data-i18n="s1_title">E-Commerce &amp; Sprzedaż</div>
-        <div class="sc-desc" data-i18n="s1_desc">Prowadzone aktywne kanały sprzedaży na platformach e-commerce w Europie. Obsługujemy listing, zamówienia, obsługę klienta oraz zwroty.</div>
-        <div class="sc-tags">
-          <span class="sc-tag accent">FBA</span>
-          <span class="sc-tag accent">FBM</span>
-          <span class="sc-tag" data-i18n="s1_t1">Fulfillment</span>
-          <span class="sc-tag" data-i18n="s1_t2">Obsługa zamówień</span>
-        </div>
-      </div>
-      <div class="service-card rv d2">
-        <span class="sc-num" aria-hidden="true">02</span>
-        <div class="sc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-        <div class="sc-title" data-i18n="s2_title">Hurt &amp; Dystrybucja</div>
-        <div class="sc-desc" data-i18n="s2_desc">Dystrybucja hurtowa do dealerów, sieci handlowych i partnerów B2B w całej Europie. Elastyczne warunki i bezpośrednia współpraca.</div>
-        <div class="sc-tags">
-          <span class="sc-tag" data-i18n="s2_t1">Hurtownie</span>
-          <span class="sc-tag" data-i18n="s2_t2">Dealerzy</span>
-          <span class="sc-tag" data-i18n="s2_t3">Sieci handlowe</span>
-        </div>
-      </div>
-      <div class="service-card rv d3">
-        <span class="sc-num" aria-hidden="true">03</span>
-        <div class="sc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><path d="M9 15h14"/></svg></div>
-        <div class="sc-title" data-i18n="s3_title">Import &amp; Sourcing</div>
-        <div class="sc-desc" data-i18n="s3_desc">Bezpośrednie pozyskiwanie towarów i części zamiennych — kontrola jakości, koordynacja transportu i odprawa celna po stronie naszej.</div>
-        <div class="sc-tags">
-          <span class="sc-tag" data-i18n="s3_t1">Kontrola jakości</span>
-          <span class="sc-tag" data-i18n="s3_t2">Logistyka</span>
-          <span class="sc-tag" data-i18n="s3_t3">Odprawa celna</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════ TYPE MOMENT ═══════════════════════ -->
-<div class="moment-band">
-  <div class="moment-inner">
-    <div class="moment-stat rv">
-      <div class="moment-stat-val">EU</div>
-      <div class="moment-stat-label" data-i18n="m_eu">Rynki europejskie</div>
-    </div>
-    <div class="moment-divider rv" aria-hidden="true"></div>
-    <div class="moment-stat rv d1">
-      <div class="moment-stat-val">B2B</div>
-      <div class="moment-stat-label" data-i18n="m_b2b">Dystrybucja hurtowa</div>
-    </div>
-    <div class="moment-divider rv d1" aria-hidden="true"></div>
-    <blockquote class="moment-quote rv d2">
-      <span data-i18n="m_q1">Jeden partner — </span><em data-i18n="m_q2">cały łańcuch e-commerce.</em><br>
-      <span data-i18n="m_q3">Od importu z Chin </span><em data-i18n="m_q4">po dostawę do klienta.</em>
-    </blockquote>
+    <span>ALPHA GLOBAL Sp. z o.o. · Warszawa, Polska</span>
+    <nav class="langs" aria-label="Język"><a href="/" hreflang="pl" lang="pl" aria-current="page">PL</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/de/" hreflang="de" lang="de">DE</a><a href="/ru/" hreflang="ru" lang="ru">RU</a><a href="/uk/" hreflang="uk" lang="uk">UA</a></nav>
   </div>
 </div>
-
-<!-- ═══════════════════════ PARTNER ═══════════════════════ -->
-<section class="section section-alt" id="partner" aria-labelledby="p-heading">
+<header class="bar">
   <div class="wrap">
-    <div class="partner-grid">
+    <a class="brand" href="/" aria-label="Alpha Global EU">Alpha Global <i>EU</i></a>
+    <nav class="nav" aria-label="Menu">
+      <a class="ul" href="#services">Usługi</a>
+      <a class="ul" href="#partners">Partnerzy</a>
+      <a class="ul" href="#about">O nas</a>
+      <a class="ul" href="#contact">Kontakt</a>
+    </nav>
+    <a class="btn" href="#contact">Skontaktuj się</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <p class="label">B2B · Warszawa, Polska</p>
+    <h1 id="h-hero">Twój partner <em>e-commerce</em> w Europie.</h1>
+    <div class="hero-grid">
       <div>
-        <span class="section-label rv" data-i18n="p_lbl">Dla producentów</span>
-        <h2 id="p-heading" class="section-title rv" data-i18n="p_title">Szukasz dystrybutora<br>w Europie?</h2>
-        <p class="section-sub rv" data-i18n="p_sub">Jesteśmy otwarci na współpracę z producentami, którzy szukają kanału dystrybucji na rynku polskim i europejskim. Przyjmujemy produkty do naszego asortymentu i dystrybuujemy je wielokanałowo.</p>
-        <div class="partner-steps rv">
-          <div class="ps-item" data-step="01">
-            <div>
-              <div class="ps-title" data-i18n="pv1_t">Przyjmujemy Twój produkt</div>
-              <div class="ps-sub" data-i18n="pv1_s">Produkt wchodzi do naszego asortymentu i jest aktywnie dystrybuowany na wybranych rynkach.</div>
-            </div>
-          </div>
-          <div class="ps-item" data-step="02">
-            <div>
-              <div class="ps-title" data-i18n="pv2_t">Wielokanałowa dystrybucja</div>
-              <div class="ps-sub" data-i18n="pv2_s">Obsługujemy wiele kanałów sprzedaży online i offline — jeden partner, wiele rynków.</div>
-            </div>
-          </div>
-          <div class="ps-item" data-step="03">
-            <div>
-              <div class="ps-title" data-i18n="pv3_t">Bezpośredni kontakt, indywidualne warunki</div>
-              <div class="ps-sub" data-i18n="pv3_s">Każda współpraca jest omawiana indywidualnie — bez szablonów, z pełnym zaangażowaniem.</div>
-            </div>
-          </div>
-        </div>
-        <a href="#kontakt" class="btn-primary rv" style="margin-top:2rem;display:inline-flex" data-i18n="p_cta">Porozmawiajmy →</a>
+        <p class="lede">Jesteśmy Twoim punktem kontaktowym w zakresie dystrybucji e-commerce, fulfillmentu i logistyki na rynku europejskim.</p>
+        <p class="cta">
+          <a class="btn" href="#contact">Napisz do nas <span aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#services">Nasze kompetencje</a>
+        </p>
       </div>
-      <div class="rv d1">
-        <div class="partner-visual">
-          <div class="pv-header">
-            <div class="pv-title-wrap">
-              <div class="pv-title-main" data-i18n="pv_hd_t">Profil dystrybucyjny</div>
-              <div class="pv-title-sub" data-i18n="pv_hd_s">Alpha Global EU · Aktywny</div>
-            </div>
-            <span class="pv-status">● OPEN</span>
-          </div>
-          <div class="pv-body">
-            <div class="pv-row">
-              <div class="pv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-              <div class="pv-info">
-                <div class="pv-info-title" data-i18n="pvr1_t">Amazon · Allegro · Własna platforma</div>
-                <div class="pv-info-sub" data-i18n="pvr1_s">Aktywne kanały sprzedaży na czołowych rynkach EU</div>
-              </div>
-            </div>
-            <div class="pv-row">
-              <div class="pv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/></svg></div>
-              <div class="pv-info">
-                <div class="pv-info-title" data-i18n="pvr2_t">Handel detaliczny i hurtowy</div>
-                <div class="pv-info-sub" data-i18n="pvr2_s">B2B, dealerzy, sieci handlowe, dropshipping</div>
-              </div>
-            </div>
-            <div class="pv-row">
-              <div class="pv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-              <div class="pv-info">
-                <div class="pv-info-title" data-i18n="pvr3_t">Bezpieczna logistyka importowa</div>
-                <div class="pv-info-sub" data-i18n="pvr3_s">Kontrola jakości CN, odprawa celna, transport do EU</div>
-              </div>
-            </div>
-            <div class="pv-row">
-              <div class="pv-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-              <div class="pv-info">
-                <div class="pv-info-title" data-i18n="pvr4_t">Obsługa w 5 językach</div>
-                <div class="pv-info-sub" data-i18n="pvr4_s">PL · EN · DE · RU · UA — bezpośrednia komunikacja</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <table class="ledger">
+        <caption class="label">Aktywne kanały</caption>
+        <tbody>
+          <tr><th scope="row">Amazon EU</th><td>FBA · FBM · Pan-EU</td><td><span class="dot"></span>aktywny</td></tr>
+          <tr><th scope="row">Allegro PL</th><td>Marketplace · Fulfillment</td><td><span class="dot"></span>aktywny</td></tr>
+          <tr><th scope="row">B2B Wholesale</th><td>PL · DE · EU · Import CN</td><td><span class="dot"></span>aktywny</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ WHY US ═══════════════════════ -->
-<section class="section" id="onas" aria-labelledby="why-heading">
+<section class="sec" id="services" aria-labelledby="h-services">
   <div class="wrap">
-    <div class="section-head center rv">
-      <span class="section-label" data-i18n="w_lbl">O nas</span>
-      <h2 id="why-heading" class="section-title" data-i18n="w_title">Dlaczego Alpha Global EU</h2>
-      <p class="section-sub" data-i18n="w_sub">Zwinne, skuteczne, z doświadczeniem — punkt kontaktowy dla całego łańcucha e-commerce.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card rv d1">
-        <div class="why-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
-        <div class="why-body">
-          <h3 class="why-title" data-i18n="w1h">Niezawodność</h3>
-          <p class="why-desc" data-i18n="w1p">Dotrzymujemy terminów. Komunikujemy jasno. Żadnych niespodzianek.</p>
-        </div>
-      </div>
-      <div class="why-card rv d2">
-        <div class="why-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-        <div class="why-body">
-          <h3 class="why-title" data-i18n="w2h">Sprawna realizacja</h3>
-          <p class="why-desc" data-i18n="w2p">Płaskie struktury, szybkie decyzje — od zapytania do działania bez zbędnej biurokracji.</p>
-        </div>
-      </div>
-      <div class="why-card rv d3">
-        <div class="why-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div>
-        <div class="why-body">
-          <h3 class="why-title" data-i18n="w3h">Bezpośredni kontakt</h3>
-          <p class="why-desc" data-i18n="w3p">Rozmawiasz z ludźmi, którzy faktycznie realizują Twoje zlecenie.</p>
-        </div>
-      </div>
-      <div class="why-card rv d4">
-        <div class="why-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-        <div class="why-body">
-          <h3 class="why-title" data-i18n="w4h">Uczciwe warunki</h3>
-          <p class="why-desc" data-i18n="w4p">Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośreedników.</p>
-        </div>
+    <div class="head">
+      <p class="label"><b>§ 1</b> — Kompetencje</p>
+      <div>
+        <h2 id="h-services">Co robimy</h2>
+        <p class="lede">Kompleksowa obsługa e-commerce — od logistyki po dystrybucję na rynkach europejskich.</p>
       </div>
     </div>
+    <ol class="rows">
+      <li>
+        <span class="n" aria-hidden="true">01</span>
+        <h3>E-Commerce &amp; Sprzedaż</h3>
+        <p>Prowadzone aktywne kanały sprzedaży na platformach e-commerce w Europie. Obsługujemy listing, zamówienia, obsługę klienta oraz zwroty.</p>
+        <ul class="tags"><li>FBA</li><li>FBM</li><li>Fulfillment</li><li>Obsługa zamówień</li></ul>
+      </li>
+      <li>
+        <span class="n" aria-hidden="true">02</span>
+        <h3>Hurt &amp; Dystrybucja</h3>
+        <p>Dystrybucja hurtowa do dealerów, sieci handlowych i partnerów B2B w całej Europie. Elastyczne warunki i bezpośrednia współpraca.</p>
+        <ul class="tags"><li>Hurtownie</li><li>Dealerzy</li><li>Sieci handlowe</li></ul>
+      </li>
+      <li>
+        <span class="n" aria-hidden="true">03</span>
+        <h3>Import &amp; Sourcing</h3>
+        <p>Bezpośrednie pozyskiwanie towarów i części zamiennych — kontrola jakości, koordynacja transportu i odprawa celna po stronie naszej.</p>
+        <ul class="tags"><li>Kontrola jakości</li><li>Logistyka</li><li>Odprawa celna</li></ul>
+      </li>
+    </ol>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
-<section class="section" id="kontakt" aria-labelledby="c-heading">
+<section class="state" aria-label="Jeden partner — cały łańcuch e-commerce.">
   <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-info rv">
-        <span class="section-label" data-i18n="c_lbl">Kontakt</span>
-        <h2 id="c-heading" class="contact-info-title" data-i18n="c_title">Wyślij zapytanie</h2>
-        <p class="contact-info-sub" data-i18n="c_sub">Odpowiadamy w ciągu 24 godzin — zawsze bezpośrednio.</p>
-        <div class="contact-links">
-          <a href="mailto:info@alpha-global.eu" class="contact-link-item">
-            <div class="cli-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
-            <div>
-              <span class="cli-label" data-i18n="cl_email">E-mail</span>
-              <span class="cli-val">info@alpha-global.eu</span>
-            </div>
-          </a>
-          <a href="https://wa.me/48518771793" target="_blank" rel="noopener" class="contact-link-item">
-            <div class="cli-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-            <div>
-              <span class="cli-label">WhatsApp</span>
-              <span class="cli-val" data-i18n="cl_wa">Napisz do nas</span>
-            </div>
-          </a>
-          <div class="contact-link-item" style="cursor:default">
-            <div class="cli-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
-            <div>
-              <span class="cli-label" data-i18n="cl_loc_lbl">Siedziba</span>
-              <span class="cli-val" data-i18n="c_loc">Warszawa, Polska</span>
-            </div>
-          </div>
+    <dl class="facts">
+      <div><dt>EU</dt><dd>Rynki europejskie</dd></div>
+      <div><dt>B2B</dt><dd>Dystrybucja hurtowa</dd></div>
+    </dl>
+    <p class="big">Jeden partner — <em>cały łańcuch e-commerce.</em><br>Od importu z Chin <em>po dostawę do klienta.</em></p>
+  </div>
+</section>
+
+<section class="sec partner" id="partners" aria-labelledby="h-partners">
+  <div class="wrap two">
+    <div>
+      <p class="label"><b>§ 2</b> — Dla producentów</p>
+      <h2 id="h-partners">Szukasz dystrybutora<br>w Europie?</h2>
+      <p class="lede">Jesteśmy otwarci na współpracę z producentami, którzy szukają kanału dystrybucji na rynku polskim i europejskim. Przyjmujemy produkty do naszego asortymentu i dystrybuujemy je wielokanałowo.</p>
+      <ol class="steps">
+          <li><div><h3>Przyjmujemy Twój produkt</h3><p>Produkt wchodzi do naszego asortymentu i jest aktywnie dystrybuowany na wybranych rynkach.</p></div></li>
+          <li><div><h3>Wielokanałowa dystrybucja</h3><p>Obsługujemy wiele kanałów sprzedaży online i offline — jeden partner, wiele rynków.</p></div></li>
+          <li><div><h3>Bezpośredni kontakt, indywidualne warunki</h3><p>Każda współpraca jest omawiana indywidualnie — bez szablonów, z pełnym zaangażowaniem.</p></div></li>
+      </ol>
+      <a class="btn" href="#contact">Porozmawiajmy →</a>
+    </div>
+    <article class="sheet" aria-labelledby="h-sheet">
+      <header>
+        <div>
+          <h3 id="h-sheet">Profil dystrybucyjny</h3>
+          <p class="label">Alpha Global EU · Aktywny</p>
         </div>
-      </div>
-      <div class="contact-form-wrap rv d1">
-        <form id="cf" aria-label="Formularz kontaktowy">
-          <div class="form-row">
-            <div class="fg"><label for="f-name" data-i18n="f1l">Imię i nazwisko *</label><input id="f-name" type="text" name="name" autocomplete="name" data-i18n-ph="f1p" placeholder="Jan Kowalski" required></div>
-            <div class="fg"><label for="f-company" data-i18n="f2l">Firma</label><input id="f-company" type="text" name="organization" autocomplete="organization" data-i18n-ph="f2p" placeholder="Firma sp. z o.o."></div>
-          </div>
-          <div class="form-row">
-            <div class="fg"><label for="f-email" data-i18n="f3l">E-mail *</label><input id="f-email" type="email" name="email" autocomplete="email" data-i18n-ph="f3p" placeholder="jan@firma.pl" required></div>
-            <div class="fg"><label for="f-subject" data-i18n="f4l">Temat</label>
-              <select id="f-subject" name="subject">
-                <option data-i18n="fo1">Dystrybucja / partnerstwo</option>
-                <option data-i18n="fo2">Fulfillment / logistyka</option>
-                <option data-i18n="fo3">Wholesale / hurt</option>
-                <option data-i18n="fo4">Inne</option>
-              </select>
-            </div>
-          </div>
-          <div class="fg"><label for="f-message" data-i18n="f5l">Wiadomość</label><textarea id="f-message" name="message" data-i18n-ph="f5p" placeholder="Opisz krótko, jak możemy współpracować..."></textarea></div>
-          <button type="submit" class="f-btn" data-i18n="f_sub">Wyślij →</button>
-          <div class="f-ok" id="fok" data-i18n="f_ok">✓ Dziękujemy — skontaktujemy się wkrótce.</div>
-        </form>
+        <span class="stamp">OPEN</span>
+      </header>
+      <dl>
+            <div><dt>Amazon · Allegro · Własna platforma</dt><dd>Aktywne kanały sprzedaży na czołowych rynkach EU</dd></div>
+            <div><dt>Handel detaliczny i hurtowy</dt><dd>B2B, dealerzy, sieci handlowe, dropshipping</dd></div>
+            <div><dt>Bezpieczna logistyka importowa</dt><dd>Kontrola jakości CN, odprawa celna, transport do EU</dd></div>
+            <div><dt>Obsługa w 5 językach</dt><dd>PL · EN · DE · RU · UA — bezpośrednia komunikacja</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><b>§ 3</b> — O nas</p>
+      <div>
+        <h2 id="h-about">Dlaczego Alpha Global EU</h2>
+        <p class="lede">Zwinne, skuteczne, z doświadczeniem — punkt kontaktowy dla całego łańcucha e-commerce.</p>
       </div>
     </div>
+    <ul class="why">
+      <li><h3>Niezawodność</h3><p>Dotrzymujemy terminów. Komunikujemy jasno. Żadnych niespodzianek.</p></li>
+      <li><h3>Sprawna realizacja</h3><p>Płaskie struktury, szybkie decyzje — od zapytania do działania bez zbędnej biurokracji.</p></li>
+      <li><h3>Bezpośredni kontakt</h3><p>Rozmawiasz z ludźmi, którzy faktycznie realizują Twoje zlecenie.</p></li>
+      <li><h3>Uczciwe warunki</h3><p>Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośredników.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap two">
+    <div>
+      <p class="label"><b>§ 4</b> — Kontakt</p>
+      <h2 id="h-contact">Wyślij zapytanie</h2>
+      <p class="lede">Odpowiadamy w ciągu 24 godzin — zawsze bezpośrednio.</p>
+      <dl class="reach">
+        <div><dt class="label">E-mail</dt><dd><a class="ul" href="mailto:info@alpha-global.eu">info@alpha-global.eu</a></dd></div>
+        <div><dt class="label">WhatsApp</dt><dd><a class="ul" href="https://wa.me/48518771793" rel="noopener">Napisz na WhatsApp</a></dd></div>
+        <div><dt class="label">Siedziba</dt><dd>Warszawa, Polska</dd></div>
+      </dl>
+    </div>
+    <form id="inquiry" action="mailto:info@alpha-global.eu" method="post" enctype="text/plain">
+      <div class="f"><label for="f-name">Imię i nazwisko *</label><input id="f-name" name="name" autocomplete="name" placeholder="Jan Kowalski" required></div>
+      <div class="f"><label for="f-org">Firma</label><input id="f-org" name="organization" autocomplete="organization" placeholder="Firma sp. z o.o."></div>
+      <div class="f"><label for="f-email">E-mail *</label><input id="f-email" type="email" name="email" autocomplete="email" placeholder="jan@firma.pl" required></div>
+      <div class="f"><label for="f-subject">Temat</label><select id="f-subject" name="subject"><option>Dystrybucja / partnerstwo</option><option>Fulfillment / logistyka</option><option>Wholesale / hurt</option><option>Inne</option></select></div>
+      <div class="f full"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" placeholder="Opisz krótko, jak możemy współpracować..."></textarea></div>
+      <div class="send"><button class="btn" type="submit">Wyślij →</button><small>Otworzy się Twój program pocztowy z gotową wiadomością.</small></div>
+    </form>
   </div>
 </section>
 
 </main>
 
-<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#" class="n-logo" aria-label="Alpha Global EU – strona główna">
-        <div class="logo-mark" aria-hidden="true"><span>AG</span></div>
-        <span class="n-wordmark">Alpha<em>Global</em>&nbsp;EU</span>
-      </a>
-      <p class="footer-tagline" data-i18n="ft_tag">B2B E-Commerce Distribution, Wholesale &amp; Import</p>
-    </div>
-    <div class="footer-links-group">
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
       <div>
-        <div class="footer-col-title" data-i18n="ft_col1">Firma</div>
-        <ul class="footer-col-links">
-          <li><a href="#uslugi" data-i18n="n_svc">Usługi</a></li>
-          <li><a href="#partner" data-i18n="n_part">Partnerzy</a></li>
-          <li><a href="#onas" data-i18n="n_about">O nas</a></li>
-        </ul>
+        <a class="brand" href="/">Alpha Global <i>EU</i></a>
+        <p>B2B E-Commerce Distribution, Wholesale &amp; Import</p>
       </div>
+      <nav aria-label="Firma">
+        <p class="label">Firma</p>
+        <ul>
+          <li><a class="ul" href="#services">Usługi</a></li>
+          <li><a class="ul" href="#partners">Partnerzy</a></li>
+          <li><a class="ul" href="#about">O nas</a></li>
+        </ul>
+      </nav>
       <div>
-        <div class="footer-col-title" data-i18n="ft_col2">Prawne</div>
-        <ul class="footer-col-links">
-          <li><a href="#" onclick="openLegal('impressum');return false;" data-i18n="ft1">Impressum</a></li>
-          <li><a href="#" onclick="openLegal('privacy');return false;" data-i18n="ft2">Polityka prywatności</a></li>
-          <li><a href="#" onclick="openLegal('terms');return false;" data-i18n="ft3">Regulamin</a></li>
-        </ul>
+        <p class="label">Prawne</p>
+        <ul><li><button type="button" class="ul" data-open="impressum">Impressum</button></li><li><button type="button" class="ul" data-open="privacy">Polityka prywatności</button></li><li><button type="button" class="ul" data-open="terms">Regulamin</button></li></ul>
       </div>
+      <address>
+        <p class="label">Kontakt</p>
+        <ul>
+          <li><a class="ul" href="mailto:info@alpha-global.eu">info@alpha-global.eu</a></li>
+          <li><a class="ul" href="https://wa.me/48518771793" rel="noopener">Napisz na WhatsApp</a></li>
+          <li>ALPHA GLOBAL Sp. z o.o.<br>ul. Ostrobramska 101A / 301<br>04-041 Warszawa, Polska</li>
+        </ul>
+      </address>
     </div>
-    <div class="footer-contact-col">
-      <div class="footer-col-title" data-i18n="ft_col3">Kontakt</div>
-      <div class="f-contact-row"><a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a></div>
-      <div class="f-contact-row"><a href="https://wa.me/48518771793" target="_blank" rel="noopener" data-i18n="cl_wa">Napisz na WhatsApp</a></div>
-      <div class="f-contact-row" data-i18n="c_loc">Warszawa, Polska</div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy" data-i18n="ft4">© 2026 Alpha Global EU</span>
-    <ul class="footer-col-links" style="flex-direction:row;gap:1.5rem">
-      <li><a href="#" onclick="openLegal('impressum');return false;" data-i18n="ft1">Impressum</a></li>
-      <li><a href="#" onclick="openLegal('privacy');return false;" data-i18n="ft2">Prywatność</a></li>
-    </ul>
+    <div class="base"><span>© 2026 Alpha Global EU</span><span>NIP 113-319-12-06 · VAT-EU PL1133191206</span></div>
   </div>
 </footer>
 
-<!-- WhatsApp float -->
-<a href="https://wa.me/48518771793" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-  <span>WhatsApp</span>
-</a>
+<a class="wa" href="https://wa.me/48518771793" rel="noopener">WhatsApp ↗</a>
 
-<!-- MODAL OVERLAY -->
-<div id="modal-overlay" onclick="closeLegal()" aria-hidden="true"></div>
-
-<!-- IMPRESSUM MODAL -->
-<div id="modal-impressum" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
-  <div class="lm-inner">
-    <button class="lm-close" onclick="closeLegal()" aria-label="Zamknij">×</button>
-    <div class="lm-content" data-llang="pl">
-      <h2>Impressum</h2>
-      <h3>Dane firmy</h3>
-      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Warszawa, Polska</p>
-      <h3>Rejestracja</h3>
-      <p>NIP: 113-319-12-06<br>VAT-UE: PL1133191206<br>KRS: <span class="lm-ph">[do uzupełnienia]</span><br>REGON: <span class="lm-ph">[do uzupełnienia]</span><br>Kapitał zakładowy: 5.000 zł</p>
-      <h3>Kontakt</h3>
-      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Napisz do nas</a><br>WWW: <strong>www.alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="en">
-      <h2>Legal Notice</h2>
-      <h3>Company details</h3>
-      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Warsaw, Poland</p>
-      <h3>Registration</h3>
-      <p>NIP (Tax ID): 113-319-12-06<br>VAT-EU: PL1133191206<br>KRS: <span class="lm-ph">[to be completed]</span><br>REGON: <span class="lm-ph">[to be completed]</span><br>Share capital: PLN 5,000</p>
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Message us</a><br>Web: <strong>www.alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="de">
-      <h2>Impressum</h2>
-      <h3>Angaben zum Unternehmen</h3>
-      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Warschau, Polen</p>
-      <h3>Registrierung</h3>
-      <p>NIP (Steuer-ID): 113-319-12-06<br>VAT-EU: PL1133191206<br>KRS: <span class="lm-ph">[zu ergänzen]</span><br>REGON: <span class="lm-ph">[zu ergänzen]</span><br>Stammkapital: 5.000 PLN</p>
-      <h3>Kontakt</h3>
-      <p>E-Mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Schreiben Sie uns</a><br>Web: <strong>www.alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="ru">
-      <h2>Реквизиты</h2>
-      <h3>Данные компании</h3>
-      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Варшава, Польша</p>
-      <h3>Регистрация</h3>
-      <p>NIP (ИНН): 113-319-12-06<br>VAT-EU: PL1133191206<br>KRS: <span class="lm-ph">[заполнить]</span><br>REGON: <span class="lm-ph">[заполнить]</span><br>Уставной капитал: 5 000 PLN</p>
-      <h3>Контакт</h3>
-      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Написать нам</a><br>Сайт: <strong>www.alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="ua">
-      <h2>Реквізити</h2>
-      <h3>Дані компанії</h3>
-      <p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Варшава, Польща</p>
-      <h3>Реєстрація</h3>
-      <p>NIP (ПДВ): 113-319-12-06<br>VAT-EU: PL1133191206<br>KRS: <span class="lm-ph">[заповнити]</span><br>REGON: <span class="lm-ph">[заповнити]</span><br>Статутний капітал: 5 000 PLN</p>
-      <h3>Контакт</h3>
-      <p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" target="_blank" rel="noopener">Написати нам</a><br>Сайт: <strong>www.alpha-global.eu</strong></p>
-    </div>
-  </div>
+<dialog id="impressum" aria-label="Impressum">
+<button class="x" type="button" aria-label="Zamknij">×</button>
+<div class="dlg">
+<h2>Impressum</h2>
+<h3>Dane firmy</h3>
+<p><strong>ALPHA GLOBAL Sp. z o.o.</strong><br>ul. Ostrobramska 101A / 301<br>04-041 Warszawa, Polska</p>
+<h3>Rejestracja</h3>
+<p>NIP: 113-319-12-06<br>VAT-UE: PL1133191206<br>Kapitał zakładowy: 5.000 zł</p>
+<h3>Kontakt</h3>
+<p>E-mail: <a href="mailto:info@alpha-global.eu">info@alpha-global.eu</a><br>WhatsApp: <a href="https://wa.me/48518771793" rel="noopener">Napisz do nas</a><br>WWW: <strong>www.alpha-global.eu</strong></p>
 </div>
-
-<!-- PRIVACY MODAL -->
-<div id="modal-privacy" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
-  <div class="lm-inner">
-    <button class="lm-close" onclick="closeLegal()" aria-label="Zamknij">×</button>
-    <div class="lm-content" data-llang="pl">
-      <h2>Polityka prywatności</h2>
-      <p>Ostatnia aktualizacja: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Administrator danych</h3>
-      <p>Administratorem Twoich danych osobowych jest <strong>Alpha Global EU</strong>, z siedzibą w Warszawie, Polska. Kontakt: <strong>info@alpha-global.eu</strong></p>
-      <h3>Jakie dane zbieramy</h3>
-      <p>Za pośrednictwem formularza kontaktowego zbieramy: imię i nazwisko, adres e-mail, nazwę firmy oraz treść wiadomości. Dane te przetwarzane są wyłącznie w celu udzielenia odpowiedzi na zapytanie.</p>
-      <h3>Podstawa prawna</h3>
-      <p>Przetwarzanie danych odbywa się na podstawie art. 6 ust. 1 lit. b) RODO (realizacja umowy / działania przedumowne) lub art. 6 ust. 1 lit. f) RODO (prawnie uzasadniony interes administratora).</p>
-      <h3>Okres przechowywania</h3>
-      <p>Dane przechowywane są przez czas niezbędny do realizacji celu, w jakim zostały zebrane, a po jego upływie przez okres wymagany przepisami prawa.</p>
-      <h3>Prawa użytkownika</h3>
-      <p>Przysługuje Ci prawo do: dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu. Masz również prawo do złożenia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO).</p>
-      <h3>Pliki cookie</h3>
-      <p>Niniejsza strona nie używa plików cookie do celów śledzenia ani analitycznych.</p>
-      <h3>Kontakt w sprawach danych</h3>
-      <p>W sprawach dotyczących ochrony danych osobowych prosimy o kontakt: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="en">
-      <h2>Privacy Policy</h2>
-      <p>Last updated: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Data controller</h3>
-      <p>The data controller is <strong>Alpha Global EU</strong>, Warsaw, Poland. Contact: <strong>info@alpha-global.eu</strong></p>
-      <h3>Data we collect</h3>
-      <p>Via the contact form, we collect: name, email address, company name and message content. This data is processed solely to respond to your inquiry.</p>
-      <h3>Legal basis</h3>
-      <p>Processing is based on Art. 6(1)(b) GDPR (performance of a contract / pre-contractual measures) or Art. 6(1)(f) GDPR (legitimate interests of the controller).</p>
-      <h3>Retention period</h3>
-      <p>Data is retained for as long as necessary for the purpose for which it was collected, and thereafter for the period required by applicable law.</p>
-      <h3>Your rights</h3>
-      <p>You have the right to: access, rectification, erasure, restriction of processing, data portability and to object to processing. You may also lodge a complaint with the relevant supervisory authority.</p>
-      <h3>Cookies</h3>
-      <p>This website does not use tracking or analytics cookies.</p>
-      <h3>Data protection contact</h3>
-      <p>For data protection enquiries, please contact: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="de">
-      <h2>Datenschutzerklärung</h2>
-      <p>Zuletzt aktualisiert: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Verantwortlicher</h3>
-      <p>Verantwortlicher im Sinne der DSGVO ist <strong>Alpha Global EU</strong>, Warschau, Polen. Kontakt: <strong>info@alpha-global.eu</strong></p>
-      <h3>Welche Daten wir erheben</h3>
-      <p>Über das Kontaktformular erheben wir: Name, E-Mail-Adresse, Firmenname und Nachrichteninhalt. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.</p>
-      <h3>Rechtsgrundlage</h3>
-      <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b) DSGVO (Vertragsfüllung / vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f) DSGVO (berechtigte Interessen des Verantwortlichen).</p>
-      <h3>Ihre Rechte</h3>
-      <p>Sie haben das Recht auf: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Sie können sich auch bei der zuständigen Aufsichtsbehörde beschweren.</p>
-      <h3>Cookies</h3>
-      <p>Diese Website verwendet keine Tracking- oder Analyse-Cookies.</p>
-      <h3>Datenschutzkontakt</h3>
-      <p>Für datenschutzbezogene Anfragen wenden Sie sich bitte an: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="ru">
-      <h2>Политика конфиденциальности</h2>
-      <p>Последнее обновление: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Оператор данных</h3>
-      <p>Оператором персональных данных является <strong>Alpha Global EU</strong>, Варшава, Польша. Контакт: <strong>info@alpha-global.eu</strong></p>
-      <h3>Какие данные мы собираем</h3>
-      <p>Через контактную форму мы собираем: имя, e-mail, название компании и содержание сообщения. Данные обрабатываются исключительно для ответа на запрос.</p>
-      <h3>Правовое основание</h3>
-      <p>Обработка осуществляется на основании ст. 6(1)(b) GDPR (исполнение договора) или ст. 6(1)(f) GDPR (законные интересы оператора).</p>
-      <h3>Ваши права</h3>
-      <p>Вы вправе: получить доступ к данным, исправить, удалить их, ограничить обработку, а также подать жалобу в надзорный орган.</p>
-      <h3>Cookies</h3>
-      <p>Данный сайт не использует файлы cookie для отслеживания или аналитики.</p>
-    </div>
-    <div class="lm-content" data-llang="ua">
-      <h2>Політика конфіденційності</h2>
-      <p>Останнє оновлення: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Оператор даних</h3>
-      <p>Оператором персональних даних є <strong>Alpha Global EU</strong>, Варшава, Польща. Контакт: <strong>info@alpha-global.eu</strong></p>
-      <h3>Які дані ми збираємо</h3>
-      <p>Через контактну форму ми збираємо: ім'я, e-mail, назву компанії та зміст повідомлення. Дані обробляються виключно для відповіді на запит.</p>
-      <h3>Ваші права</h3>
-      <p>Ви маєте право: отримати доступ до даних, виправити, видалити їх, обмежити обробку, а також подати скаргу до надзорного органу.</p>
-      <h3>Cookies</h3>
-      <p>Цей сайт не використовує файли cookie для відстеження або аналітики.</p>
-    </div>
-  </div>
+</dialog>
+<dialog id="privacy" aria-label="Polityka prywatności">
+<button class="x" type="button" aria-label="Zamknij">×</button>
+<div class="dlg">
+<h2>Polityka prywatności</h2>
+<p>Ostatnia aktualizacja: 2026</p>
+<hr>
+<h3>Administrator danych</h3>
+<p>Administratorem Twoich danych osobowych jest <strong>Alpha Global EU</strong>, z siedzibą w Warszawie, Polska. Kontakt: <strong>info@alpha-global.eu</strong></p>
+<h3>Jakie dane zbieramy</h3>
+<p>Za pośrednictwem formularza kontaktowego zbieramy: imię i nazwisko, adres e-mail, nazwę firmy oraz treść wiadomości. Dane te przetwarzane są wyłącznie w celu udzielenia odpowiedzi na zapytanie.</p>
+<h3>Podstawa prawna</h3>
+<p>Przetwarzanie danych odbywa się na podstawie art. 6 ust. 1 lit. b) RODO (realizacja umowy / działania przedumowne) lub art. 6 ust. 1 lit. f) RODO (prawnie uzasadniony interes administratora).</p>
+<h3>Okres przechowywania</h3>
+<p>Dane przechowywane są przez czas niezbędny do realizacji celu, w jakim zostały zebrane, a po jego upływie przez okres wymagany przepisami prawa.</p>
+<h3>Prawa użytkownika</h3>
+<p>Przysługuje Ci prawo do: dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu. Masz również prawo do złożenia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO).</p>
+<h3>Pliki cookie</h3>
+<p>Niniejsza strona nie używa plików cookie do celów śledzenia ani analitycznych.</p>
+<h3>Kontakt w sprawach danych</h3>
+<p>W sprawach dotyczących ochrony danych osobowych prosimy o kontakt: <strong>info@alpha-global.eu</strong></p>
 </div>
-
-<!-- TERMS MODAL (compact) -->
-<div id="modal-terms" class="legal-modal" role="dialog" aria-modal="true">
-  <div class="lm-inner">
-    <button class="lm-close" onclick="closeLegal()" aria-label="Zamknij">×</button>
-    <div class="lm-content" data-llang="pl">
-      <h2>Regulamin</h2>
-      <p>Ostatnia aktualizacja: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Postanowienia ogólne</h3>
-      <p>Niniejszy regulamin określa zasady korzystania ze strony internetowej <strong>www.alpha-global.eu</strong> należącej do <strong>ALPHA GLOBAL Sp. z o.o.</strong>, z siedzibą w Warszawie.</p>
-      <h3>Usługi</h3>
-      <p>Serwis ma charakter informacyjny. Wszelkie zapytania handlowe realizowane są na podstawie indywidualnych umów zawieranych z klientami.</p>
-      <h3>Odpowiedzialność</h3>
-      <p>Właściciel serwisu dokłada należytej staranności w zakresie zamieszczanych treści, jednak nie ponosi odpowiedzialności za ewentualne błędy. Treści mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego.</p>
-      <h3>Kontakt</h3>
-      <p>W sprawach regulaminu: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="en">
-      <h2>Terms of Use</h2>
-      <p>Last updated: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>General provisions</h3>
-      <p>These terms govern the use of <strong>www.alpha-global.eu</strong>, operated by <strong>ALPHA GLOBAL Sp. z o.o.</strong>, Warsaw, Poland.</p>
-      <h3>Services</h3>
-      <p>This website is informational. All commercial inquiries are handled under individual agreements with clients.</p>
-      <h3>Liability</h3>
-      <p>The site owner takes care to ensure the accuracy of content but accepts no liability for errors. Content is informational and does not constitute an offer under civil law.</p>
-      <h3>Contact</h3>
-      <p>Regarding these terms: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="de">
-      <h2>Nutzungsbedingungen</h2>
-      <p>Zuletzt aktualisiert: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Allgemeine Bestimmungen</h3>
-      <p>Diese Nutzungsbedingungen regeln die Nutzung von <strong>www.alpha-global.eu</strong>, betrieben von <strong>ALPHA GLOBAL Sp. z o.o.</strong>, Warschau, Polen.</p>
-      <h3>Haftung</h3>
-      <p>Der Betreiber ist um die Richtigkeit der Inhalte bemüht, übernimmt jedoch keine Haftung für Fehler. Die Inhalte sind informativ und stellen kein Angebot im Sinne des Zivilrechts dar.</p>
-    </div>
-    <div class="lm-content" data-llang="ru">
-      <h2>Пользовательское соглашение</h2>
-      <p>Последнее обновление: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Общие положения</h3>
-      <p>Настоящие условия регулируют использование сайта <strong>www.alpha-global.eu</strong>, принадлежащего <strong>ALPHA GLOBAL Sp. z o.o.</strong>, Варшава, Польша.</p>
-      <h3>Контакт</h3>
-      <p>По вопросам: <strong>info@alpha-global.eu</strong></p>
-    </div>
-    <div class="lm-content" data-llang="ua">
-      <h2>Умови використання</h2>
-      <p>Останнє оновлення: 2026</p>
-      <div class="lm-divider"></div>
-      <h3>Загальні положення</h3>
-      <p>Ці умови регулюють використання сайту <strong>www.alpha-global.eu</strong>, що належить <strong>ALPHA GLOBAL Sp. z o.o.</strong>, Варшава, Польща.</p>
-      <h3>Контакт</h3>
-      <p>З питань: <strong>info@alpha-global.eu</strong></p>
-    </div>
-  </div>
+</dialog>
+<dialog id="terms" aria-label="Regulamin">
+<button class="x" type="button" aria-label="Zamknij">×</button>
+<div class="dlg">
+<h2>Regulamin</h2>
+<p>Ostatnia aktualizacja: 2026</p>
+<hr>
+<h3>Postanowienia ogólne</h3>
+<p>Niniejszy regulamin określa zasady korzystania ze strony internetowej <strong>www.alpha-global.eu</strong> należącej do <strong>ALPHA GLOBAL Sp. z o.o.</strong>, z siedzibą w Warszawie.</p>
+<h3>Usługi</h3>
+<p>Serwis ma charakter informacyjny. Wszelkie zapytania handlowe realizowane są na podstawie indywidualnych umów zawieranych z klientami.</p>
+<h3>Odpowiedzialność</h3>
+<p>Właściciel serwisu dokłada należytej staranności w zakresie zamieszczanych treści, jednak nie ponosi odpowiedzialności za ewentualne błędy. Treści mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego.</p>
+<h3>Kontakt</h3>
+<p>W sprawach regulaminu: <strong>info@alpha-global.eu</strong></p>
 </div>
-
-<script>
-/* ══════════════════════════════════════════════
-   I18N — 5 Language System
-   ══════════════════════════════════════════════ */
-const LANGS = {
-  pl:{
-    n_svc:"Usługi",n_part:"Partnerzy",n_about:"O nas",n_ctc:"Kontakt",n_btn:"Skontaktuj się",
-    h_eye:"B2B · Warszawa, Polska",h_t1:"Twój partner",h_t2:"e-commerce",h_t3:"w Europie.",
-    h_desc:"Jesteśmy Twoim punktem kontaktowym w zakresie dystrybucji e-commerce, fulfillmentu i logistyki na rynku europejskim.",
-    h_cta1:"Napisz do nas",h_cta2:"Nasze kompetencje",
-    hp_label:"Aktywne kanały",
-    sv_lbl:"Kompetencje",sv_title:"Co robimy",sv_sub:"Kompleksowa obsługa e-commerce — od logistyki po dystrybucję na rynkach europejskich.",
-    s1_title:"E-Commerce & Sprzedaż",s1_desc:"Prowadzone aktywne kanały sprzedaży na platformach e-commerce w Europie. Obsługujemy listing, zamówienia, obsługę klienta oraz zwroty.",s1_t1:"Fulfillment",s1_t2:"Obsługa zamówień",
-    s2_title:"Hurt & Dystrybucja",s2_desc:"Dystrybucja hurtowa do dealerów, sieci handlowych i partnerów B2B w całej Europie. Elastyczne warunki i bezpośrednia współpraca.",s2_t1:"Hurtownie",s2_t2:"Dealerzy",s2_t3:"Sieci handlowe",
-    s3_title:"Import & Sourcing",s3_desc:"Bezpośrednie pozyskiwanie towarów i części zamiennych — kontrola jakości, koordynacja transportu i odprawa celna po stronie naszej.",s3_t1:"Kontrola jakości",s3_t2:"Logistyka",s3_t3:"Odprawa celna",
-    m_eu:"Rynki europejskie",m_b2b:"Dystrybucja hurtowa",m_q1:"Jeden partner — ",m_q2:"cały łańcuch e-commerce.",m_q3:"Od importu z Chin ",m_q4:"po dostawę do klienta.",
-    p_lbl:"Dla producentów",p_title:"Szukasz dystrybutora\nw Europie?",p_sub:"Jesteśmy otwarci na współpracę z producentami, którzy szukają kanału dystrybucji na rynku polskim i europejskim. Przyjmujemy produkty do naszego asortymentu i dystrybuujemy je wielokanałowo.",p_cta:"Porozmawiajmy →",
-    pv1_t:"Przyjmujemy Twój produkt",pv1_s:"Produkt wchodzi do naszego asortymentu i jest aktywnie dystrybuowany na wybranych rynkach.",
-    pv2_t:"Wielokanałowa dystrybucja",pv2_s:"Obsługujemy wiele kanałów sprzedaży online i offline — jeden partner, wiele rynków.",
-    pv3_t:"Bezpośredni kontakt, indywidualne warunki",pv3_s:"Każda współpraca jest omawiana indywidualnie — bez szablonów, z pełnym zaangażowaniem.",
-    pv_hd_t:"Profil dystrybucyjny",pv_hd_s:"Alpha Global EU · Aktywny",
-    pvr1_t:"Amazon · Allegro · Własna platforma",pvr1_s:"Aktywne kanały sprzedaży na czołowych rynkach EU",
-    pvr2_t:"Handel detaliczny i hurtowy",pvr2_s:"B2B, dealerzy, sieci handlowe, dropshipping",
-    pvr3_t:"Bezpieczna logistyka importowa",pvr3_s:"Kontrola jakości CN, odprawa celna, transport do EU",
-    pvr4_t:"Obsługa w 5 językach",pvr4_s:"PL · EN · DE · RU · UA — bezpośrednia komunikacja",
-    w_lbl:"O nas",w_title:"Dlaczego Alpha Global EU",w_sub:"Zwinne, skuteczne, z doświadczeniem — punkt kontaktowy dla całego łańcucha e-commerce.",
-    w1h:"Niezawodność",w1p:"Dotrzymujemy terminów. Komunikujemy jasno. Żadnych niespodzianek.",
-    w2h:"Sprawna realizacja",w2p:"Płaskie struktury, szybkie decyzje — od zapytania do działania bez zbędnej biurokracji.",
-    w3h:"Bezpośredni kontakt",w3p:"Rozmawiasz z ludźmi, którzy faktycznie realizują Twoje zlecenie.",
-    w4h:"Uczciwe warunki",w4p:"Bezpośrednie relacje z dostawcami i partnerami — bez zbędnych pośreedników.",
-    c_lbl:"Kontakt",c_title:"Wyślij zapytanie",c_sub:"Odpowiadamy w ciągu 24 godzin — zawsze bezpośrednio.",
-    cl_email:"E-mail",cl_wa:"Napisz na WhatsApp",cl_loc_lbl:"Siedziba",c_loc:"Warszawa, Polska",
-    f1l:"Imię i nazwisko *",f1p:"Jan Kowalski",f2l:"Firma",f2p:"Firma sp. z o.o.",
-    f3l:"E-mail *",f3p:"jan@firma.pl",f4l:"Temat",
-    fo1:"Dystrybucja / partnerstwo",fo2:"Fulfillment / logistyka",fo3:"Wholesale / hurt",fo4:"Inne",
-    f5l:"Wiadomość",f5p:"Opisz krótko, jak możemy współpracować...",f_sub:"Wyślij →",f_ok:"✓ Dziękujemy — skontaktujemy się wkrótce.",
-    ft_tag:"B2B E-Commerce Distribution, Wholesale & Import",
-    ft_col1:"Firma",ft_col2:"Prawne",ft_col3:"Kontakt",
-    ft1:"Impressum",ft2:"Polityka prywatności",ft3:"Regulamin",ft4:"© 2026 Alpha Global EU",
-  },
-  en:{
-    n_svc:"Services",n_part:"Partners",n_about:"About",n_ctc:"Contact",n_btn:"Get in touch",
-    h_eye:"B2B · Warsaw, Poland",h_t1:"Your partner in",h_t2:"e-commerce",h_t3:"across Europe.",
-    h_desc:"We are your single point of contact for e-commerce distribution, fulfilment and logistics across the European market.",
-    h_cta1:"Contact us",h_cta2:"Our services",
-    hp_label:"Active channels",
-    sv_lbl:"Services",sv_title:"What we do",sv_sub:"End-to-end e-commerce management — from logistics to multi-market distribution.",
-    s1_title:"E-Commerce & Sales",s1_desc:"Active sales channels on European e-commerce platforms. We handle listings, orders, customer service and returns.",s1_t1:"Fulfilment",s1_t2:"Order handling",
-    s2_title:"Wholesale & Distribution",s2_desc:"Wholesale distribution to dealers, retail chains and B2B partners across Europe. Flexible terms and direct cooperation.",s2_t1:"Wholesalers",s2_t2:"Dealers",s2_t3:"Retail chains",
-    s3_title:"Import & Sourcing",s3_desc:"Direct sourcing of goods and spare parts — quality control, transport coordination and customs clearance handled by us.",s3_t1:"Quality control",s3_t2:"Logistics",s3_t3:"Customs clearance",
-    m_eu:"European markets",m_b2b:"Wholesale distribution",m_q1:"One partner — ",m_q2:"the entire e-commerce chain.",m_q3:"From import in China ",m_q4:"to delivery to your customer.",
-    p_lbl:"For manufacturers",p_title:"Looking for a distributor\nin Europe?",p_sub:"We are open to working with manufacturers seeking a distribution channel in the Polish and European market. We add your products to our range and distribute them across multiple channels.",p_cta:"Let's talk →",
-    pv1_t:"We take on your product",pv1_s:"Your product enters our range and is actively distributed in selected markets.",
-    pv2_t:"Multi-channel distribution",pv2_s:"We manage multiple online and offline sales channels — one partner, multiple markets.",
-    pv3_t:"Direct contact, individual terms",pv3_s:"Every partnership is discussed individually — no templates, full commitment.",
-    pv_hd_t:"Distribution profile",pv_hd_s:"Alpha Global EU · Active",
-    pvr1_t:"Amazon · Allegro · Own platform",pvr1_s:"Active sales channels across leading EU markets",
-    pvr2_t:"Retail and wholesale trade",pvr2_s:"B2B, dealers, retail chains, dropshipping",
-    pvr3_t:"Secure import logistics",pvr3_s:"CN quality control, customs clearance, EU delivery",
-    pvr4_t:"5-language support",pvr4_s:"PL · EN · DE · RU · UA — direct communication",
-    w_lbl:"About us",w_title:"Why Alpha Global EU",w_sub:"Agile, effective, experienced — a single point of contact for the entire e-commerce chain.",
-    w1h:"Reliability",w1p:"We meet deadlines. We communicate clearly. No surprises.",
-    w2h:"Fast execution",w2p:"Flat structures, quick decisions — from enquiry to action without unnecessary bureaucracy.",
-    w3h:"Direct contact",w3p:"You talk to the people who actually fulfil your order.",
-    w4h:"Fair terms",w4p:"Direct relationships with suppliers and partners — no unnecessary middlemen.",
-    c_lbl:"Contact",c_title:"Send an enquiry",c_sub:"We respond within 24 hours — always directly.",
-    cl_email:"Email",cl_wa:"Message on WhatsApp",cl_loc_lbl:"Location",c_loc:"Warsaw, Poland",
-    f1l:"Name *",f1p:"John Smith",f2l:"Company",f2p:"Company Ltd.",
-    f3l:"Email *",f3p:"john@company.com",f4l:"Subject",
-    fo1:"Distribution / partnership",fo2:"Fulfilment / logistics",fo3:"Wholesale",fo4:"Other",
-    f5l:"Message",f5p:"Briefly describe how we can work together...",f_sub:"Send →",f_ok:"✓ Thank you — we will be in touch shortly.",
-    ft_tag:"B2B E-Commerce Distribution, Wholesale & Import",
-    ft_col1:"Company",ft_col2:"Legal",ft_col3:"Contact",
-    ft1:"Legal Notice",ft2:"Privacy Policy",ft3:"Terms of Use",ft4:"© 2026 Alpha Global EU",
-  },
-  de:{
-    n_svc:"Leistungen",n_part:"Partner",n_about:"Über uns",n_ctc:"Kontakt",n_btn:"Kontaktieren",
-    h_eye:"B2B · Warschau, Polen",h_t1:"Ihr Partner für",h_t2:"E-Commerce",h_t3:"in Europa.",
-    h_desc:"Wir sind Ihr zentraler Ansprechpartner für E-Commerce-Distribution, Fulfillment und Logistik auf dem europäischen Markt.",
-    h_cta1:"Kontakt aufnehmen",h_cta2:"Unsere Leistungen",
-    hp_label:"Aktive Kanäle",
-    sv_lbl:"Leistungen",sv_title:"Was wir tun",sv_sub:"Vollständige E-Commerce-Abwicklung — von der Logistik bis zur Verteilung auf europäischen Märkten.",
-    s1_title:"E-Commerce & Verkauf",s1_desc:"Aktive Verkaufskanäle auf europäischen E-Commerce-Plattformen. Wir übernehmen Listings, Bestellungen, Kundenservice und Retouren.",s1_t1:"Fulfillment",s1_t2:"Auftragsabwicklung",
-    s2_title:"Großhandel & Distribution",s2_desc:"Großhandelsdistribution an Händler, Einzelhandelsketten und B2B-Partner in ganz Europa. Flexible Konditionen und direkte Zusammenarbeit.",s2_t1:"Großhändler",s2_t2:"Händler",s2_t3:"Handelsketten",
-    s3_title:"Import & Sourcing",s3_desc:"Direkte Beschaffung von Waren und Ersatzteilen — Qualitätskontrolle, Transportkoordination und Zollabwicklung übernehmen wir.",s3_t1:"Qualitätskontrolle",s3_t2:"Logistik",s3_t3:"Zollabwicklung",
-    m_eu:"Europäische Märkte",m_b2b:"Großhandelsdistribution",m_q1:"Ein Partner — ",m_q2:"die gesamte E-Commerce-Kette.",m_q3:"Vom Import in China ",m_q4:"bis zur Lieferung an Ihren Kunden.",
-    p_lbl:"Für Hersteller",p_title:"Suchen Sie einen Distributor\nin Europa?",p_sub:"Wir sind offen für die Zusammenarbeit mit Herstellern, die einen Distributionskanal auf dem polnischen und europäischen Markt suchen.",p_cta:"Sprechen wir →",
-    pv1_t:"Wir nehmen Ihr Produkt auf",pv1_s:"Ihr Produkt wird in unser Sortiment aufgenommen und aktiv auf ausgewählten Märkten vertrieben.",
-    pv2_t:"Mehrkanalige Distribution",pv2_s:"Wir betreiben mehrere Online- und Offline-Verkaufskanäle — ein Partner, viele Märkte.",
-    pv3_t:"Direktkontakt, individuelle Konditionen",pv3_s:"Jede Zusammenarbeit wird individuell besprochen — ohne Vorlagen, mit vollem Engagement.",
-    pv_hd_t:"Distributionsprofil",pv_hd_s:"Alpha Global EU · Aktiv",
-    pvr1_t:"Amazon · Allegro · Eigene Plattform",pvr1_s:"Aktive Verkaufskanäle auf führenden EU-Märkten",
-    pvr2_t:"Einzel- und Großhandel",pvr2_s:"B2B, Händler, Handelsketten, Dropshipping",
-    pvr3_t:"Sichere Importlogistik",pvr3_s:"CN-Qualitätskontrolle, Zollabwicklung, EU-Lieferung",
-    pvr4_t:"5-Sprachen-Support",pvr4_s:"PL · EN · DE · RU · UA — direkte Kommunikation",
-    w_lbl:"Über uns",w_title:"Warum Alpha Global EU",w_sub:"Agil, effektiv, erfahren — ein zentraler Ansprechpartner für die gesamte E-Commerce-Kette.",
-    w1h:"Zuverlässigkeit",w1p:"Wir halten Fristen ein. Wir kommunizieren klar. Keine Überraschungen.",
-    w2h:"Schnelle Umsetzung",w2p:"Flache Strukturen, schnelle Entscheidungen — von der Anfrage zum Handeln ohne bürokratischen Aufwand.",
-    w3h:"Direkter Kontakt",w3p:"Sie sprechen mit den Menschen, die Ihren Auftrag tatsächlich ausführen.",
-    w4h:"Faire Konditionen",w4p:"Direkte Beziehungen zu Lieferanten und Partnern — ohne unnötige Zwischenhändler.",
-    c_lbl:"Kontakt",c_title:"Anfrage senden",c_sub:"Wir antworten innerhalb von 24 Stunden — immer direkt.",
-    cl_email:"E-Mail",cl_wa:"WhatsApp schreiben",cl_loc_lbl:"Standort",c_loc:"Warschau, Polen",
-    f1l:"Name *",f1p:"Max Mustermann",f2l:"Unternehmen",f2p:"Firma GmbH",
-    f3l:"E-Mail *",f3p:"max@firma.de",f4l:"Betreff",
-    fo1:"Distribution / Partnerschaft",fo2:"Fulfillment / Logistik",fo3:"Großhandel",fo4:"Sonstiges",
-    f5l:"Nachricht",f5p:"Kurze Beschreibung der möglichen Zusammenarbeit...",f_sub:"Senden →",f_ok:"✓ Vielen Dank — wir melden uns in Kürze.",
-    ft_tag:"B2B E-Commerce Distribution, Großhandel & Import",
-    ft_col1:"Unternehmen",ft_col2:"Rechtliches",ft_col3:"Kontakt",
-    ft1:"Impressum",ft2:"Datenschutzerklärung",ft3:"Nutzungsbedingungen",ft4:"© 2026 Alpha Global EU",
-  },
-  ru:{
-    n_svc:"Услуги",n_part:"Партнёры",n_about:"О нас",n_ctc:"Контакт",n_btn:"Связаться",
-    h_eye:"B2B · Варшава, Польша",h_t1:"Ваш партнёр",h_t2:"e-commerce",h_t3:"в Европе.",
-    h_desc:"Мы — ваш единый контакт по дистрибуции e-commerce, фулфилменту и логистике на европейском рынке.",
-    h_cta1:"Написать нам",h_cta2:"Наши услуги",
-    hp_label:"Активные каналы",
-    sv_lbl:"Услуги",sv_title:"Что мы делаем",sv_sub:"Полный цикл e-commerce — от логистики до дистрибуции на европейских рынках.",
-    s1_title:"E-Commerce и продажи",s1_desc:"Активные каналы продаж на европейских платформах. Листинги, заказы, обслуживание клиентов и возвраты.",s1_t1:"Фулфилмент",s1_t2:"Обработка заказов",
-    s2_title:"Опт и дистрибуция",s2_desc:"Оптовая дистрибуция дилерам, торговым сетям и B2B-партнёрам по всей Европе. Гибкие условия и прямое сотрудничество.",s2_t1:"Оптовики",s2_t2:"Дилеры",s2_t3:"Торговые сети",
-    s3_title:"Импорт и сорсинг",s3_desc:"Прямые закупки товаров и запчастей — контроль качества, координация транспорта и таможенное оформление на нашей стороне.",s3_t1:"Контроль качества",s3_t2:"Логистика",s3_t3:"Таможня",
-    m_eu:"Европейские рынки",m_b2b:"Оптовая дистрибуция",m_q1:"Один партнёр — ",m_q2:"вся цепочка e-commerce.",m_q3:"От импорта из Китая ",m_q4:"до доставки вашему клиенту.",
-    p_lbl:"Для производителей",p_title:"Ищете дистрибьютора\nв Европе?",p_sub:"Мы открыты для сотрудничества с производителями, ищущими канал дистрибуции на польском и европейском рынке.",p_cta:"Поговорим →",
-    pv1_t:"Принимаем ваш продукт",pv1_s:"Товар входит в наш ассортимент и активно распространяется на выбранных рынках.",
-    pv2_t:"Многоканальная дистрибуция",pv2_s:"Работаем с несколькими онлайн и офлайн каналами — один партнёр, много рынков.",
-    pv3_t:"Прямой контакт, индивидуальные условия",pv3_s:"Каждое сотрудничество обсуждается индивидуально — без шаблонов, с полной отдачей.",
-    pv_hd_t:"Дистрибуционный профиль",pv_hd_s:"Alpha Global EU · Активен",
-    pvr1_t:"Amazon · Allegro · Собственная платформа",pvr1_s:"Активные каналы продаж на ведущих рынках EU",
-    pvr2_t:"Розничная и оптовая торговля",pvr2_s:"B2B, дилеры, торговые сети, дропшиппинг",
-    pvr3_t:"Безопасная импортная логистика",pvr3_s:"Контроль качества CN, таможня, доставка в EU",
-    pvr4_t:"Поддержка на 5 языках",pvr4_s:"PL · EN · DE · RU · UA — прямая коммуникация",
-    w_lbl:"О нас",w_title:"Почему Alpha Global EU",w_sub:"Гибко, эффективно, с опытом — единая точка контакта для всей цепочки e-commerce.",
-    w1h:"Надёжность",w1p:"Соблюдаем сроки. Общаемся чётко. Никаких сюрпризов.",
-    w2h:"Быстрое исполнение",w2p:"Плоские структуры, быстрые решения — от запроса до действия без лишней бюрократии.",
-    w3h:"Прямой контакт",w3p:"Вы общаетесь с людьми, которые реально выполняют ваш заказ.",
-    w4h:"Честные условия",w4p:"Прямые отношения с поставщиками и партнёрами — без лишних посредников.",
-    c_lbl:"Контакт",c_title:"Отправить запрос",c_sub:"Отвечаем в течение 24 часов — всегда напрямую.",
-    cl_email:"E-mail",cl_wa:"Написать в WhatsApp",cl_loc_lbl:"Адрес",c_loc:"Варшава, Польша",
-    f1l:"Имя *",f1p:"Иван Иванов",f2l:"Компания",f2p:"ООО Компания",
-    f3l:"E-mail *",f3p:"ivan@company.ru",f4l:"Тема",
-    fo1:"Дистрибуция / партнёрство",fo2:"Фулфилмент / логистика",fo3:"Оптовая торговля",fo4:"Другое",
-    f5l:"Сообщение",f5p:"Опишите кратко, как мы можем сотрудничать...",f_sub:"Отправить →",f_ok:"✓ Спасибо — мы свяжемся с вами в ближайшее время.",
-    ft_tag:"B2B Дистрибуция E-Commerce, Опт & Импорт",
-    ft_col1:"Компания",ft_col2:"Правовая",ft_col3:"Контакт",
-    ft1:"Реквизиты",ft2:"Политика конфиденциальности",ft3:"Соглашение",ft4:"© 2026 Alpha Global EU",
-  },
-  ua:{
-    n_svc:"Послуги",n_part:"Партнери",n_about:"Про нас",n_ctc:"Контакт",n_btn:"Зв'язатися",
-    h_eye:"B2B · Варшава, Польща",h_t1:"Ваш партнер",h_t2:"e-commerce",h_t3:"в Європі.",
-    h_desc:"Ми — ваш єдиний контакт з дистрибуції e-commerce, фулфілменту та логістики на європейському ринку.",
-    h_cta1:"Написати нам",h_cta2:"Наші послуги",
-    hp_label:"Активні канали",
-    sv_lbl:"Послуги",sv_title:"Що ми робимо",sv_sub:"Повний цикл e-commerce — від логістики до дистрибуції на європейських ринках.",
-    s1_title:"E-Commerce і продажі",s1_desc:"Активні канали продажів на європейських платформах. Лістинги, замовлення, обслуговування клієнтів та повернення.",s1_t1:"Фулфілмент",s1_t2:"Обробка замовлень",
-    s2_title:"Опт і дистрибуція",s2_desc:"Оптова дистрибуція дилерам, торговим мережам та B2B-партнерам по всій Європі. Гнучкі умови та пряма співпраця.",s2_t1:"Оптовики",s2_t2:"Дилери",s2_t3:"Торгові мережі",
-    s3_title:"Імпорт і сорсинг",s3_desc:"Прямі закупівлі товарів та запчастин — контроль якості, координація транспорту та митне оформлення з нашого боку.",s3_t1:"Контроль якості",s3_t2:"Логістика",s3_t3:"Митниця",
-    m_eu:"Європейські ринки",m_b2b:"Оптова дистрибуція",m_q1:"Один партнер — ",m_q2:"весь ланцюг e-commerce.",m_q3:"Від імпорту з Китаю ",m_q4:"до доставки вашому клієнту.",
-    p_lbl:"Для виробників",p_title:"Шукаєте дистриб'ютора\nв Європі?",p_sub:"Ми відкриті до співпраці з виробниками, які шукають канал дистрибуції на польському та європейському ринку.",p_cta:"Поговоримо →",
-    pv1_t:"Приймаємо ваш продукт",pv1_s:"Товар входить до нашого асортименту та активно розповсюджується на обраних ринках.",
-    pv2_t:"Багатоканальна дистрибуція",pv2_s:"Працюємо з кількома онлайн та офлайн каналами — один партнер, багато ринків.",
-    pv3_t:"Прямий контакт, індивідуальні умови",pv3_s:"Кожна співпраця обговорюється індивідуально — без шаблонів, з повною відданістю.",
-    pv_hd_t:"Дистрибуційний профіль",pv_hd_s:"Alpha Global EU · Активний",
-    pvr1_t:"Amazon · Allegro · Власна платформа",pvr1_s:"Активні канали продажів на провідних ринках EU",
-    pvr2_t:"Роздрібна та оптова торгівля",pvr2_s:"B2B, дилери, торгові мережі, дропшипінг",
-    pvr3_t:"Безпечна імпортна логістика",pvr3_s:"Контроль якості CN, митниця, доставка в EU",
-    pvr4_t:"Підтримка 5 мовами",pvr4_s:"PL · EN · DE · RU · UA — пряме спілкування",
-    w_lbl:"Про нас",w_title:"Чому Alpha Global EU",w_sub:"Гнучко, ефективно, з досвідом — єдина точка контакту для всього ланцюга e-commerce.",
-    w1h:"Надійність",w1p:"Дотримуємося термінів. Спілкуємося чітко. Жодних несподіванок.",
-    w2h:"Швидке виконання",w2p:"Плоскі структури, швидкі рішення — від запиту до дії без зайвої бюрократії.",
-    w3h:"Прямий контакт",w3p:"Ви спілкуєтесь з людьми, які реально виконують ваше замовлення.",
-    w4h:"Чесні умови",w4p:"Прямі відносини з постачальниками та партнерами — без зайвих посередників.",
-    c_lbl:"Контакт",c_title:"Надіслати запит",c_sub:"Відповідаємо протягом 24 годин — завжди напряму.",
-    cl_email:"E-mail",cl_wa:"Написати у WhatsApp",cl_loc_lbl:"Адреса",c_loc:"Варшава, Польща",
-    f1l:"Ім'я *",f1p:"Іван Іваненко",f2l:"Компанія",f2p:"ТОВ Компанія",
-    f3l:"E-mail *",f3p:"ivan@company.ua",f4l:"Тема",
-    fo1:"Дистрибуція / партнерство",fo2:"Фулфілмент / логістика",fo3:"Оптова торгівля",fo4:"Інше",
-    f5l:"Повідомлення",f5p:"Опишіть коротко, як ми можемо співпрацювати...",f_sub:"Надіслати →",f_ok:"✓ Дякуємо — зв'яжемося з вами незабаром.",
-    ft_tag:"B2B Дистрибуція E-Commerce, Опт & Імпорт",
-    ft_col1:"Компанія",ft_col2:"Правове",ft_col3:"Контакт",
-    ft1:"Реквізити",ft2:"Політика конфіденційності",ft3:"Угода",ft4:"© 2026 Alpha Global EU",
-  }
-};
-
-let currentLang = 'pl';
-
-function applyLang(lang){
-  if(!LANGS[lang]) return;
-  currentLang = lang;
-  const t = LANGS[lang];
-  // text nodes
-  document.querySelectorAll('[data-i18n]').forEach(el=>{
-    const k = el.getAttribute('data-i18n');
-    if(t[k] !== undefined){
-      if(el.tagName==='OPTION') el.textContent = t[k];
-      else el.innerHTML = (t[k]||'').replace(/\n/g,'<br>');
-    }
-  });
-  // placeholders
-  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
-    const k = el.getAttribute('data-i18n-ph');
-    if(t[k] !== undefined) el.placeholder = t[k];
-  });
-  // lang buttons
-  document.querySelectorAll('.lbtn').forEach(b=>{
-    const active = b.getAttribute('data-lang')===lang;
-    b.classList.toggle('active', active);
-    b.setAttribute('aria-pressed', active ? 'true':'false');
-  });
-  // html lang
-  document.documentElement.lang = lang==='ua'?'uk':lang;
-  // legal modals lang
-  updateModalLang();
-}
-
-function updateModalLang(){
-  document.querySelectorAll('.lm-content').forEach(c=>{
-    const show = c.getAttribute('data-llang')===currentLang;
-    c.classList.toggle('active', show);
-  });
-}
-
-// Lang buttons
-document.querySelectorAll('.lbtn').forEach(b=>{
-  b.addEventListener('click',()=>{
-    applyLang(b.getAttribute('data-lang'));
-  });
-});
-
-/* ══════════════════════════════════════════════
-   NAV — scroll behavior
-   ══════════════════════════════════════════════ */
-const nav = document.getElementById('nav');
-window.addEventListener('scroll',()=>{
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-},{passive:true});
-
-/* ══════════════════════════════════════════════
-   SCROLL REVEAL
-   ══════════════════════════════════════════════ */
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting) e.target.classList.add('in');
-  });
-},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.rv').forEach(el=>observer.observe(el));
-
-/* ══════════════════════════════════════════════
-   HERO ENTRANCE ANIMATION
-   ══════════════════════════════════════════════ */
-const heroSection = document.querySelector('[data-enter]');
-if(heroSection){
-  requestAnimationFrame(()=>{
-    setTimeout(()=>heroSection.classList.add('entered'), 100);
-  });
-}
-
-/* ══════════════════════════════════════════════
-   LEGAL MODALS
-   ══════════════════════════════════════════════ */
-function openLegal(type){
-  updateModalLang();
-  const overlay = document.getElementById('modal-overlay');
-  const modal = document.getElementById('modal-'+type);
-  if(!modal) return;
-  overlay.style.display='block';
-  modal.style.display='flex';
-  document.body.style.overflow='hidden';
-  modal.querySelector('.lm-close')?.focus();
-}
-function closeLegal(){
-  document.querySelectorAll('.legal-modal').forEach(m=>m.style.display='none');
-  document.getElementById('modal-overlay').style.display='none';
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape') closeLegal();
-});
-
-/* ══════════════════════════════════════════════
-   CONTACT FORM
-   ══════════════════════════════════════════════ */
-document.getElementById('cf')?.addEventListener('submit',function(e){
-  e.preventDefault();
-  const btn = this.querySelector('.f-btn');
-  const ok = document.getElementById('fok');
-  btn.disabled = true;
-  btn.style.opacity = '.6';
-  setTimeout(()=>{
-    ok.style.display='block';
-    this.reset();
-    btn.disabled=false;
-    btn.style.opacity='';
-  },800);
-});
-
-/* ══════════════════════════════════════════════
-   SMOOTH SCROLL
-   ══════════════════════════════════════════════ */
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const id = a.getAttribute('href').slice(1);
-    if(!id) return;
-    const target = document.getElementById(id);
-    if(!target) return;
-    e.preventDefault();
-    target.scrollIntoView({behavior:'smooth',block:'start'});
-  });
-});
-</script>
+</dialog>
+<script src="/site.js" defer></script>
 </body>
 </html>
