@@ -40,4 +40,14 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://www.alpha-global.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alpha-global.eu/"/>
   </url>
+  <url><loc>https://www.alpha-global.eu/polityka-prywatnosci/</loc></url>
+  <url><loc>https://www.alpha-global.eu/en/privacy/</loc></url>
+  <url><loc>https://www.alpha-global.eu/de/datenschutz/</loc></url>
+  <url><loc>https://www.alpha-global.eu/ru/privacy/</loc></url>
+  <url><loc>https://www.alpha-global.eu/uk/privacy/</loc></url>
+  <url><loc>https://www.alpha-global.eu/regulamin/</loc></url>
+  <url><loc>https://www.alpha-global.eu/en/terms/</loc></url>
+  <url><loc>https://www.alpha-global.eu/de/nutzungsbedingungen/</loc></url>
+  <url><loc>https://www.alpha-global.eu/ru/terms/</loc></url>
+  <url><loc>https://www.alpha-global.eu/uk/terms/</loc></url>
 </urlset>
