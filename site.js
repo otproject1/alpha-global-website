@@ -17,32 +17,6 @@
   var hero = document.querySelector('[data-enter]');
   if (hero) setTimeout(function () { hero.classList.add('entered'); }, 100);
 
-  var overlay = document.getElementById('modal-overlay');
-  var opener = null;
-  function closeLegal() {
-    document.querySelectorAll('.legal-modal').forEach(function (m) { m.style.display = 'none'; });
-    overlay.style.display = 'none';
-    document.body.style.overflow = '';
-    if (opener) { opener.focus(); opener = null; }
-  }
-  document.querySelectorAll('[data-legal]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      var m = document.getElementById('modal-' + a.dataset.legal);
-      if (!m) return;
-      opener = a;
-      overlay.style.display = 'block';
-      m.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-      m.querySelector('.lm-close').focus();
-    });
-  });
-  overlay.addEventListener('click', closeLegal);
-  document.querySelectorAll('.legal-modal').forEach(function (m) {
-    m.addEventListener('click', function (e) { if (e.target === m || e.target.closest('.lm-close')) closeLegal(); });
-  });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLegal(); });
-
   var form = document.getElementById('cf');
   if (form) {
     var KEY = 'c36d56a9-712d-4bd7-8b9e-074245ad47bd';
