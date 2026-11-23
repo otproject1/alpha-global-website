@@ -404,11 +404,6 @@ color:var(--text-muted);
 background:transparent;
 transition:border-color .2s, color .2s;
 }
-.sc-tag.accent{
-border-color:var(--border-blue);
-color:rgba(99,162,246,.85);
-background:rgba(37,99,235,.06);
-}
 .partner-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
