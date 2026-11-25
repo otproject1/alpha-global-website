@@ -4,7 +4,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src https://fonts.bunny.net; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://api.web3forms.com; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src https://fonts.bunny.net; img-src 'self' data: https://www.google-analytics.com https://www.facebook.com; connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.facebook.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://api.web3forms.com; frame-ancestors 'none'
 
 /styles.css
   Cache-Control: public, max-age=86400
